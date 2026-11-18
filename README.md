@@ -1,74 +1,77 @@
-# Proyecto: Dashboard & Análisis de Datos: Electronic Release Atlas 1990-2000
+# Project: Dashboard & Data Analysis: Electronic Release Atlas 1990–2000
 
-## Descripción
+[English](README.md) | [Spanish](README.es.md)
 
-En este proyecto del bootcamp en Data Analytics dictado por ThePower aplicare los conocimientos aprendidos del módulo **“Dashboard & Análisis de Datos”**.
+## Description
 
-Para realizarlo segui las especificaciones recogidas en la lección **“Proyecto: Dashboard & Análisis de Datos”**.
+In this project for ThePower's Data Analytics bootcamp, I will apply the knowledge acquired in the “Dashboard & Data Analysis” module.
 
-## Contexto
+To complete it, I followed the specifications provided in the “Project: Dashboard & Data Analysis” lesson.
 
-La tematica del proyecto nace como una iniciativa personal debido a que tambien desarrollo actividades hace mas de 20 anos como dee jay y productor de musica electronica, despertando especial interes en conocer los insights de una decada clave para la evolucion de este estilo musical.
+## Background
 
-## Definición y objetivos del objetivo
+The topic of this project arose from a personal initiative. I have also worked as a DJ and electronic music producer for more than 20 years, which sparked a particular interest in exploring insights from a decade that was crucial to the evolution of this music.
 
-“La expansión de la música electrónica en los años noventa: estilos, sellos, formatos, demanda y valor de mercado”
+## Project Definition and Objectives
 
-¿Cómo evolucionó la producción, demanda y valoración de los lanzamientos de música electrónica entre 1990 y 2000, y qué estilos, sellos, formatos y países tuvieron mayor peso en el mercado?
+“The expansion of electronic music in the 1990s: styles, labels, formats, demand, and market value.”
 
-Discogs cataloga lanzamientos con información como artista, sello, formato, país, año, tracklist y detalles de edición, lo que permite construir un análisis muy rico desde la perspectiva de colección, edición y mercado físico.
+How did the production, demand, and ratings of electronic music releases evolve between 1990 and 2000, and which styles, labels, formats, and countries had the greatest presence in the market?
 
-Esto permite conectar el análisis con la evolución de estilos como el house, techno, electro, ambient, downtempo, además de mostrar qué sellos y países impulsaron la escena durante esa década. Discogs comenzó en 2005 como una base centrada en música electrónica antes de ampliar su catálogo a otros géneros y formatos.
+Discogs catalogs releases with information such as artist, label, format, country, year, tracklist, and edition details, allowing a rich analysis from the perspective of collecting, editions, and the physical music market.
 
-Realizar un **análisis exploratorio** de los lanzamientos de música electrónica entre 1990 y 2000 y reflejar los principales hallazgos en un **dashboard**.
+This connects the analysis with the evolution of styles such as house, techno, electro, ambient, and downtempo, while showing which labels and countries drove the scene during that decade. Discogs began in 2005 as an electronic music database before expanding its catalog to other genres and formats.
 
-## Preguntas de analisis
+Conduct an exploratory analysis of electronic music releases between 1990 and 2000 and present the main findings in a dashboard.
 
-El análisis se plantea como un estudio sobre la **Producción, demanda y valoración de la música electrónica en los años noventa** y tendrá como objetivo responder preguntas como:
+## Research Questions
 
-- ¿Cómo evolucionó el número de lanzamientos de música electrónica entre 1990 y 2000?
-- ¿Qué estilos y subgéneros concentraron mas lanzamientos discograficos?
-- ¿Qué sellos discográficos fueron más prolíficos?
-- ¿Qué países publicaron mayor cantidad de lanzamientos?
-- ¿Qué formato físico predominó y cómo evolucionó?
-- ¿Qué lanzamientos generaron mayor interés entre los usuarios de Discogs?
-- ¿Qué relación existe entre el interés de la comunidad, las valoraciones y los precios de mercado?
-- ¿Qué artistas, sellos y estilos destacan por demanda, colección o valoración?
-- ¿Cómo cambió la composición del mercado electrónico a lo largo de la década?
-- ¿Qué estilos alcanzaron mayores precios de mercado?
+The analysis is conceived as a study of electronic music production, demand, and ratings in the 1990s and aims to answer questions such as:
 
-## KPIs propuestos
+- How did the number of electronic music releases evolve between 1990 and 2000?
+- Which styles and subgenres accounted for the most releases?
+- Which record labels were the most prolific?
+- Which countries published the most releases?
+- Which physical format dominated, and how did it evolve?
+- Which releases generated the greatest interest among Discogs users?
+- What relationship exists between community interest, ratings, and market prices?
+- Which artists, labels, and styles stand out in terms of demand, collection ownership, or ratings?
+- How did the composition of the electronic music market change throughout the decade?
+- Which styles reached the highest market prices?
 
-- Total de lanzamientos analizados [Total Releases].
-- Número de lanzamientos por año [Releases by year]. 
-- Número de lanzamientos por estilo o subgénero [Selected styles by year].
-- Número de lanzamientos por formato [Formats by year].
-- Número de lanzamientos por sello discográfico [Top 10 record labels by release count].
-- Número de lanzamientos por país [Releases by country].
-- Número de artistas únicos [Unique Artist Credits].
-- Número de sellos únicos [Unique Labels].
-- Total de usuarios que tienen cada lanzamiento (`have`).
-- Total de usuarios que desean cada lanzamiento (`want`).
-- Ratio de demanda: `want / have` [Top 10 highest-rated releases].
-- Valoración media global.
-- Valoración media por estilo, sello, país o año.
-- Precio mediano por estilo, sello, país o año.
-- Ranking de lanzamientos por `have`, `want`, `num_ratings` y `median_price`.
+## Proposed KPIs
 
-## Hipótesis iniciales
+- Total releases analyzed [Total Releases].
+- Number of releases by year [Releases by year].
+- Number of releases by style or subgenre [Selected styles by year].
+- Number of releases by format [Formats by year].
+- Number of releases by record label [Top 10 record labels by release count].
+- Number of releases by country [Releases by country].
+- Number of unique artists [Unique Artist Credits].
+- Number of unique labels [Unique Labels].
+- Total users who own each release (`have`).
+- Total users who want each release (`want`).
+- Demand ratio: `want / have` [Top 10 highest-rated releases].
+- Overall average rating.
+- Average rating by style, label, country, or year.
+- Median price by style, label, country, or year.
+- Release rankings by `have`, `want`, `num_ratings`, and `median_price`.
 
-- El número de lanzamientos de música electrónica creció durante la primera mitad de los años noventa.
-- El vinilo fue el formato dominante, especialmente en lanzamientos orientados al club y al DJing.
-- House, Deep House, Garage House, Techno y Progressive House concentraron una parte relevante de la producción.
-- Existieron sellos especialmente activos, como Strictly Rhythm, Nervous Records, Network Records, Cutting Records, FFRR, Deconstruction, Positiva o Perfecto.
-- Los lanzamientos con mayor número de usuarios que los desean pueden presentar precios medianos más elevados.
-- La valoración media puede relacionarse con el interés de colección, aunque no necesariamente con el precio de mercado.
-- Determinados países, especialmente Estados Unidos, Reino Unido, Alemania, Italia, Países Bajos y Francia, concentraron una parte importante de la producción.
+## Initial Hypotheses
 
-Estas hipótesis deberán validarse o descartarse mediante el análisis exploratorio.
+- The number of electronic music releases grew during the first half of the 1990s.
+- Vinyl was the dominant format, especially for club- and DJ-oriented releases.
+- House, Deep House, Garage House, Techno, and Progressive House accounted for a significant share of releases.
+- Certain labels were particularly active, such as Strictly Rhythm, Nervous Records, Network Records, Cutting Records, FFRR, Deconstruction, Positiva, and Perfecto.
+- Releases wanted by more users may have higher median prices.
+- Average rating may be associated with collection interest, although not necessarily with market price.
+- Certain countries, particularly the United States, United Kingdom, Germany, Italy, Netherlands, and France, accounted for a significant share of releases.
 
-## Estructura del proyecto
+These hypotheses will be validated or rejected through exploratory analysis.
 
+## Project Structure
+
+```text
 Electronic_release_atlas_1990_2000/
 │
 ├── README.md
@@ -84,189 +87,197 @@ Electronic_release_atlas_1990_2000/
 └── lookandfeel/
     ├── printscreen_dashboard_electronic_release_atlas_1990_2000.png
     └── mockup_dashboard_electronic_release_atlas_1990_2000.jpg
+```
 
+## Column Extraction
 
-## Extracción de columnas
+From the cleaning file `02_discogs_electronic_cleaning.xlsx` to the final file `03_discogs_electronic_processed_analytics_dashboard.xlsm`: I transferred the required columns from `Discogs_electronic_cleaning` to a second worksheet, `Discogs_electronic_processed`, using direct worksheet references and the formula:
 
-Del archivo de limpieza 02_discogs_electronic_cleaning.xlsx al archivo final 03_discogs_electronic_processed_analytics_dashboard.xlsm: se trasladaron las columnas necesarias desde la hoja Discogs_electronic_cleaning a una segunda hoja Discogs_electronic_processed mediante referencias directas entre hojas, utilizando la fórmula  =Discogs_electronic_cleaning1!A:A . 
+```excel
+=Discogs_electronic_cleaning1!A:A
+```
 
-Posteriormente, los resultados se convirtieron en valores estáticos mediante Pegado especial > Valores, de modo que la base de datos final no dependa de fórmulas ni referencias a la hoja original para disminuir la carga de procesamiento. Esta hoja constituye la fuente de datos para el archivo final con los releases depurados de donde se sirve el dashboard.
+I then converted the results to static values using Paste Special > Values, so the final database would not depend on formulas or references to the original worksheet, reducing the processing load. This worksheet provides the cleaned releases used by the final file and dashboard.
 
-## Requisitos
+## Requirements
 
-El proyecto debe cubrir los siguientes puntos:
+The project must cover the following:
 
-- **Transformación y limpieza de los datos**
-- **Análisis descriptivo de los datos**
-- **Dashboard**
-- **Informe explicativo del análisis**
-- **README del proyecto**
+- Data transformation and cleaning.
+- Descriptive data analysis.
+- Dashboard.
+- Explanatory analysis report.
+- Project README.
 
-## Herramientas
+## Tools
 
-Para realizar el proyecto se utilizo Microsoft Excel.
+I used Microsoft Excel to complete the project.
 
-## Datos
+## Data
 
-El dataset utilizado fue **`discogs_electronic.csv`**, Discogs Electronic Music Dataset (1990–2000) cuyo origen es https://www.kaggle.com/datasets/justinpakzad/discogs-electronic-music-dataset-1990-2000?resource=download
+The dataset used was `discogs_electronic.csv`, the Discogs Electronic Music Dataset (1990–2000), available at https://www.kaggle.com/datasets/justinpakzad/discogs-electronic-music-dataset-1990-2000?resource=download
 
-Consta de una selección de lanzamientos de música electrónica de 1990 a 2000, principalmente vinilos, algunos CDs y otros formatos. Se ha recopilado a partir del marketplace de https://www.discogs.com la mayor base de datos y plataforma de venta de música en formato fisico del mundo. Los datos se obtuvieron mediante web scraping utilizando Python junto con Scrapy.
+It contains a selection of electronic music releases from 1990 to 2000, mainly vinyl, some CDs, and other formats. It was collected from the marketplace at https://www.discogs.com, the world's largest database and sales platform for music in physical formats. The data was obtained through web scraping using Python and Scrapy.
 
-El conjunto de datos abarcan diferentes subgeneros que permiten estudiar la producción, circulación y valoración de lanzamientos electrónicos durante una década clave para el house, el techno, el garage, el trance y la cultura de club.
+The dataset covers different subgenres, allowing the study of the production, circulation, and ratings of electronic releases during a key decade for house, techno, garage, trance, and club culture.
 
-Sugerencias del creador de la base de datos
+Suggestions from the dataset creator:
 
-Rareza y deseabilidad : "Utilice los valores de want/have para determinar qué discos o estilos son raros o mas demandados. Descubra qué discos son populares pero no están ampliamente disponibles y vea si hay un vínculo entre la rareza, la popularidad del artista, el estilo o la fecha de lanzamiento del disco".
+Rarity and desirability: “Use want/have values to determine which records or styles are rare or more sought-after. Discover which records are popular but not widely available, and whether rarity is linked to artist popularity, style, or release date.”
 
-Influencias geográficas : "Examine cómo la escena de la música electrónica varió entre países [country_clean]. ¿Qué países fueron líderes en la producción de música electrónica? ¿Cómo variaron los estilos según la región?"
+Geographic influences: “Examine how the electronic music scene varied across countries [country_clean]. Which countries led electronic music production? How did styles vary by region?”
 
-Popularidad e influencia del artista : "Explore qué artistas fueron más influyentes en los 90. Esto podría evaluarse a través de num_ratings, average_rating o el número de personas que want/have sus discos.
+Artist popularity and influence: “Explore which artists were most influential in the 1990s. This could be assessed through num_ratings, average_rating, or the number of people who want/have their records.”
 
-## Limitaciones del análisis
+## Analysis Limitations
 
-El dataset procede de un proceso de scraping y contiene duplicados, errores de catalogación o valores incompletos.
-Discogs es una base de datos colaborativa, por lo que la calidad y completitud de los metadatos puede variar entre lanzamientos.
-El dataset representa una muestra de lanzamientos electrónicos, no necesariamente la totalidad de la producción musical del periodo (872,171 lanzamientos).
-La presencia en Discogs no equivale necesariamente a ventas, popularidad comercial, difusión radiofónica o reproducciones.
-Los precios reflejan información de mercado en un momento concreto y pueden estar condicionados por rareza, estado del soporte, edición, demanda de coleccionistas y disponibilidad actual.
+The dataset comes from scraping and contains duplicates, cataloging errors, or incomplete values.
 
-## Características principales del dataset
+Discogs is a collaborative database, so metadata quality and completeness may vary between releases.
 
-- **Periodo analizado:** 1990–2000.
-- **Género principal:** música electrónica.
-- **Columnas:** 15 en el dataset original y 19 en el dataset final.
-- **Registros:** 32.542 en el dataset original y 29.926 tras el proceso de limpieza.
-- **Formatos físicos:** principalmente vinilo, con presencia de CD y otros soportes.
+The dataset represents a sample of electronic music releases, not necessarily all musical production during the period (872,171 releases).
 
+Presence on Discogs does not necessarily equal sales, commercial popularity, radio airplay, or streams.
 
-## Diccionario de datos origen
+Prices reflect market information at a specific point in time and may be influenced by rarity, media condition, edition, collector demand, and current availability.
 
-| Columna | Tipo de dato | Descripción |
+## Main Dataset Characteristics
+
+- Period analyzed: 1990–2000.
+- Main genre: electronic music.
+- Columns: 15 in the original dataset and 19 in the final dataset.
+- Records: 32,542 in the original dataset and 29,926 after cleaning.
+- Physical formats: mainly vinyl, with CDs and other media also represented.
+
+## Original Data Dictionary
+
+| Column | Data type | Description |
 |---|---|---|
-| `artist` | Texto | Artista o grupo principal del lanzamiento. |
-| `title` | Texto | Título del lanzamiento discográfico. |
-| `label` | Texto | Sello discográfico responsable de la publicación. |
-| `country` | Texto | País o región de publicación del lanzamiento. |
-| `format` | Texto | Formato físico del lanzamiento, como vinilo o CD. |
-| `release_date` | Fecha/Texto | Fecha o año de publicación del lanzamiento. |
-| `genre` | Texto | Género principal asignado en Discogs. |
-| `styles` | Texto | Estilos o subgéneros asociados al lanzamiento. |
-| `have` | Numérico | Número de usuarios que tienen el lanzamiento en su colección. |
-| `want` | Numérico | Número de usuarios que desean adquirir el lanzamiento. |
-| `num_ratings` | Numérico | Número total de valoraciones recibidas. |
-| `average_rating` | Numérico | Valoración media del lanzamiento. |
-| `lowest_price` | Numérico | Precio mínimo registrado en el marketplace. |
-| `median_price` | Numérico | Precio mediano registrado en el marketplace. |
-| `highest_price` | Numérico | Precio máximo registrado en el marketplace. |
+| `artist` | Text | Main artist or group on the release. |
+| `title` | Text | Record release title. |
+| `label` | Text | Record label responsible for the release. |
+| `country` | Text | Country or region of release. |
+| `format` | Text | Physical release format, such as vinyl or CD. |
+| `release_date` | Date/Text | Release date or year. |
+| `genre` | Text | Main genre assigned in Discogs. |
+| `styles` | Text | Styles or subgenres associated with the release. |
+| `have` | Numeric | Number of users who have the release in their collection. |
+| `want` | Numeric | Number of users who want to acquire the release. |
+| `num_ratings` | Numeric | Total number of ratings received. |
+| `average_rating` | Numeric | Average release rating. |
+| `lowest_price` | Numeric | Lowest price recorded in the marketplace. |
+| `median_price` | Numeric | Median price recorded in the marketplace. |
+| `highest_price` | Numeric | Highest price recorded in the marketplace. |
 
-## Diccionario de datos final
+## Final Data Dictionary
 
-La estructura final del dataset contiene 16 columnas que recogen información discográfica, clasificación musical, presencia en colecciones y listas de deseos, valoraciones y precios.
+The final dataset structure contains 16 columns covering release information, musical classification, collection and wantlist presence, ratings, and prices.
 
-| Columna | Tipo de dato | Descripción |
+| Column | Data type | Description |
 |---|---|---|
-| `artist` | Texto | Nombre del artista, grupo o proyecto musical al que se atribuye el lanzamiento. Puede contener denominaciones colectivas como `Various` para recopilaciones de varios artistas. |
-| `title` | Texto | Título del lanzamiento discográfico. |
-| `label` | Texto | Nombre del sello discográfico asociado al lanzamiento. |
-| `country_clean` | Texto | País de publicación del lanzamiento después del proceso de limpieza y normalización. No representa necesariamente la nacionalidad del artista ni la ubicación del sello. |
-| `market_regions` | Texto | Región o conjunto de mercados de publicación identificado durante la limpieza geográfica. Su interpretación depende del criterio utilizado para separar países y regiones. |
-| `format` | Texto | Formato del lanzamiento registrado en el dataset, por ejemplo, `Vinyl` o `CD`. |
-| `release_year` | Número entero | Año de publicación del lanzamiento, extraído y normalizado a partir de la fecha original. El periodo previsto de análisis es de 1990 a 2000, ambos inclusive. |
-| `genre` | Texto | Género musical asignado al lanzamiento en el dataset de origen. |
-| `styles_clean` | Texto | Estilo o conjunto de estilos musicales asociados al lanzamiento después de su limpieza y normalización. Un mismo registro puede incluir varios estilos. |
-| `styles_primary` | Texto | Primer estilo musical asociado al lanzamiento después de su limpieza y normalización. |
-| `have` | Número entero | Número de usuarios de Discogs que tenían el lanzamiento añadido a su colección en el momento de la extracción de los datos. No equivale al número total de copias fabricadas o vendidas. |
-| `want` | Número entero | Número de usuarios de Discogs que tenían el lanzamiento añadido a su lista de deseos en el momento de la extracción. No representa compras realizadas ni pedidos pendientes. |
-| `num_ratings` | Número entero | Cantidad de valoraciones recibidas por el lanzamiento o edición. Permite contextualizar la valoración media. |
-| `votes_threshold` | Texto | Cortes de cantidad de personas que valoraron el lanzamiento discografico. |
-| `average_rating_clean` | Número decimal | Valoración media de los usuarios asociada al lanzamiento o edición en Discogs. No corresponde a la reputación del vendedor ni a la clasificación del estado físico de una copia concreta. Los valores no disponibles no se integraron como una valoración numérica. |
-| `lowest_price_clean` | Número decimal — importe monetario | Valor mínimo de precio recogido para el lanzamiento en el dataset de origen, tras limpiar el campo `lowest_price`. Los valores no disponibles no se integraron como una valoración numérica. |
-| `median_price_clean` | Número decimal — importe monetario | Mediana de precio recogida para el lanzamiento en el dataset de origen, tras limpiar el campo `median_price`. Los valores no disponibles no se integraron como una valoración numérica. |
-| `highest_price_clean` | Número decimal — importe monetario | Valor máximo de precio recogido para el lanzamiento en el dataset de origen, tras limpiar el campo `highest_price`. Los valores no disponibles no se integraron como una valoración numérica. |
-| `release_display` | Texto | Etiqueta descriptiva de identificación que reúne los principales datos de cada lanzamiento y permite distinguirlo dentro del análisis. |
+| `artist` | Text | Name of the artist, group, or musical project credited on the release. May include collective credits such as `Various` for multi-artist compilations. |
+| `title` | Text | Record release title. |
+| `label` | Text | Name of the record label associated with the release. |
+| `country_clean` | Text | Country of release after cleaning and normalization. Does not necessarily represent the artist's nationality or the label's location. |
+| `market_regions` | Text | Region or group of release markets identified during geographic cleaning. Its interpretation depends on the criteria used to separate countries and regions. |
+| `format` | Text | Release format recorded in the dataset, for example `Vinyl` or `CD`. |
+| `release_year` | Integer | Release year, extracted and normalized from the original date. The intended analysis period is 1990–2000 inclusive. |
+| `genre` | Text | Musical genre assigned to the release in the source dataset. |
+| `styles_clean` | Text | Style or combination of musical styles associated with the release after cleaning and normalization. A record may include multiple styles. |
+| `styles_primary` | Text | First musical style associated with the release after cleaning and normalization. |
+| `have` | Integer | Number of Discogs users who had added the release to their collection at extraction time. Does not equal the total number of copies manufactured or sold. |
+| `want` | Integer | Number of Discogs users who had added the release to their wantlist at extraction time. Does not represent completed purchases or pending orders. |
+| `num_ratings` | Integer | Number of ratings received by the release or edition. Provides context for its average rating. |
+| `votes_threshold` | Text | Bands for the number of people who rated the release. |
+| `average_rating_clean` | Decimal | Average user rating associated with the release or edition on Discogs. Does not refer to seller reputation or the physical condition grade of a specific copy. Unavailable values were not included as numeric ratings. |
+| `lowest_price_clean` | Decimal — monetary amount | Minimum price recorded for the release in the source dataset after cleaning `lowest_price`. Unavailable values were not included as numeric values. |
+| `median_price_clean` | Decimal — monetary amount | Median price recorded for the release in the source dataset after cleaning `median_price`. Unavailable values were not included as numeric values. |
+| `highest_price_clean` | Decimal — monetary amount | Maximum price recorded for the release in the source dataset after cleaning `highest_price`. Unavailable values were not included as numeric values. |
+| `release_display` | Text | Descriptive identification label combining the main details of each release to distinguish it within the analysis. |
 
+## Unit of Analysis
 
-## Unidad de análisis
+Each row is treated as a record of a release in the dataset, not as a song or an individual sale.
 
-Cada fila se trata como un registro de lanzamiento discográfico del dataset, no como una canción ni como una venta individual.
+A matching artist and title alone is not used to declare two records duplicates, because they may correspond to different editions or versions of a release.
 
-La coincidencia de artista y título no se utiliza, por sí sola, para declarar que dos registros son duplicados, ya que pueden corresponder a distintas ediciones o versiones de un lanzamiento.
+## Methodological Notes
 
-## Notas metodológicas
+### Countries and Regions
 
-### Países y regiones
+`country_clean` contains the normalized country of release, while `market_regions` identifies regions or release markets.
 
-La variable `country_clean` recoge el país de publicación normalizado, mientras que `market_regions` permite identificar regiones o mercados de publicación.
+### Musical Styles
 
-### Estilos musicales
+`styles_clean` may contain several styles for one release, so it should not be interpreted as a single or primary-style classification.
 
-La variable `styles_clean` puede contener varios estilos asociados a un mismo lanzamiento, por lo que no debe interpretarse como una clasificación de estilo único o principal.
+I split and filtered this variable to obtain a list of individual styles. The list serves as a lookup catalog and supports counts by individual style. It does not, by itself, constitute a slicer connected to all dashboard elements.
 
-A partir de esta variable, se realizó un proceso de separación y filtrado para obtener una lista de estilos individuales. Esta lista sirve como catálogo de consulta y como apoyo a los recuentos por estilo individual. No constituye por sí sola un segmentador conectado a todos los elementos del dashboard.
+Calculations that search for complete labels in `styles_clean` include releases containing that style even when they are also assigned other labels. This must not be confused with the `style_primary` filter, which retains only the first style in the source text.
 
-En los cálculos que buscan etiquetas completas dentro de `styles_clean`, se incluyen los lanzamientos que contienen ese estilo, aunque también tengan otras etiquetas. Este criterio no debe confundirse con el filtro `style_primary`, que conserva únicamente el primer estilo del texto de origen.
+### Missing Values
 
-### Valores ausentes
+The original file uses `--` in some ratings and prices. I decided to use `Unknown` for categorical variables and null for quantitative variables.
 
-El archivo original utiliza el indicador `--` en algunas valoraciones y precios para las variables categoricas decidi sustituirlo por `Unknown` y para las cuantitativas por null.
+The specific cleaning documentation explains how these values were handled in each column.
 
-La documentación de limpieza especifica indica cómo se han tratado estos valores en cada columna.
+### Ratings and Copy Condition
 
-### Valoraciones y estado de los ejemplares
+Average rating is interpreted as users' evaluation of a release or edition, without attributing it exclusively to artistic quality.
 
-La valoración media se interpreta como una evaluación de los usuarios sobre el lanzamiento o edición, sin atribuirla exclusivamente a su calidad artística.
+The dataset does not include media and sleeve condition for each individual copy or transaction feedback. Therefore, it cannot directly analyze satisfaction with the seller, packaging, shipping, or whether an item matched its description.
 
-El dataset no incluye el estado del soporte y de la carátula de cada ejemplar, ni el feedback de las transacciones. Por tanto, no permite analizar directamente la satisfacción con el vendedor, el embalaje, el envío o la correspondencia del artículo con su descripción.
+### Time Interpretation
 
-### Interpretación temporal
+`release_year` corresponds to the release's publication year.
 
-El campo `release_year` corresponde al año de publicación del lanzamiento.
+Collection, wantlist, rating, and price variables reflect information gathered at extraction time (2023), not necessarily the year of release.
 
-Las variables de colección, listas de deseos, valoraciones y precios corresponden a la información recopilada en el momento de la extracción (2023), no necesariamente al año de publicación.
+### Price Interpretation
 
-### Interpretación de precios
+Prices in the original file include the `$` symbol, corresponding to US dollars.
 
-Los precios del archivo original incluyen el símbolo `$` cuya divisa corresponde a dolares americanos.
+### Data Types
 
-### Tipos de datos
+The types in this dictionary are those expected for analysis. Their actual assignment can be checked in `03_discogs_electronic_processed_analytics_dashboard.xlsm`.
 
-Los tipos indicados en este diccionario son los esperados para el análisis. Su asignación efectiva puede comprobarse en el archivo `03_discogs_electronic_processed_analytics_dashboard.xlsm`.
+## Transformation and Cleaning
 
-## Transformación y limpieza
+## Duplicate Removal or Treatment
 
-## Eliminación o tratamiento de duplicados.
+As in any data-cleaning process, I had to make strategic decisions about the criteria defining a duplicate. I did not consider every record sharing [artist] and [title] a duplicate: two editions of the same album can represent different releases with different ratings and market prices.
 
-Como en cualquier proceso de depuración de datos, fue necesario tomar decisiones estratégicas sobre qué criterios definirían un registro duplicado. En este conjunto de datos, no se consideró duplicado cualquier registro que compartiera [artist] [title]: dos ediciones del mismo álbum pueden corresponder a lanzamientos distintos, con valoraciones y precios diferentes en el mercado discografico.
+I therefore defined a composite uniqueness key based on six fields: [artist], [title], [label], [country], [format], and [release_year_transformed].
 
-Por ello, se definió una clave compuesta de unicidad basada en seis campos:[artist] [title][ label][ country] [ format ][ release_year_transformed] 
+A record was considered a duplicate only when all six fields matched simultaneously. For example, if artist, title, label, country, and format matched but the edition year differed, I treated the record as a different edition or reissue rather than a duplicate.
 
-Un registro se consideró duplicado únicamente cuando coincidían simultáneamente estos seis campos. Si, por ejemplo, artista, título, sello, país y formato coincidían, pero el año de edición era diferente, el registro no se trató como duplicado, sino como una edición o reedición distinta del mismo material fonográfico.
+This decision reflects the logic of the record market: publication year can significantly affect a release's value, since an original edition is not valued in the same way as a later reissue. Retaining records with different [release_year_transformed] values preserves alternative editions of the same album as independent observations.
 
-Esta decisión responde a la lógica del mercado discográfico: el año de publicación puede afectar de forma relevante al valor de una referencia, ya que no se valora igual una edición original que una reedición posterior. Por tanto, conservar registros con distinto  release_year_transformed  permite mantener ediciones alternativas del mismo álbum como observaciones independientes.
+## Duplicate Review
 
-## Revisión de duplicados
+I subsequently created `Duplicados` as a quality-control worksheet. In it, I generated a dynamic view using `FILTRAR`, extracting only records whose combination of [artist], [title], [label], [country], [format], and [release_year_transformed] appeared more than once.
 
-Posteriormente, se creó la hoja  Duplicados  como espacio de control de calidad. En ella se generó una vista dinámica mediante la función  FILTRAR , que extrajo únicamente los registros cuya combinación de  [artist] [title][ label][ country] [ format ][ release_year_transformed]  aparecía más de una vez en la base.
+Detection used `CONTAR.SI.CONJUNTO`, which counts simultaneous matches across multiple columns. Records with counts above 1 were considered duplicates under the defined composite key.
 
-La detección se basó en  CONTAR.SI.CONJUNTO , que calcula el número de coincidencias simultáneas en varias columnas. Los registros con un recuento superior a 1 fueron considerados duplicados según la clave compuesta definida.
+`Duplicados` was not used as the dashboard's main source, but as a review and audit tool before final cleaning.
 
-La hoja  Duplicados  no se utilizó como fuente principal del dashboard, sino como instrumento de revisión y auditoría previa a la depuración final.
+## Duplicate Removal
 
-## Eliminación de duplicados
+After identifying and filtering the records marked `DUPLICADO`, I applied Data > Remove Duplicates to the filtered dataset.
 
-Una vez identificados y filtrados los registros marcados como  DUPLICADO , se aplicó la herramienta Datos > Quitar duplicados sobre el conjunto filtrado.
+In the settings, I selected only the six columns forming the uniqueness key: [artist], [title], [label], [country], [format], and [release_year_transformed].
 
-En el cuadro de configuración se seleccionaron exclusivamente las seis columnas que conformaban la clave de unicidad: [artist] [title] [label] [country] [format] [release_year_transformed] 
+Excel retained the first occurrence of each repeated combination and removed subsequent rows with exactly the same key. The operation was permanent, so I kept the original file as a backup to preserve traceability.
 
-Excel conservó la primera aparición de cada combinación repetida y eliminó las filas restantes que compartían exactamente esa misma clave. La operación fue permanente, por lo que se mantuvo el archivo original como respaldo para conservar la trazabilidad del proceso.
+The result was a cleaned dataset in which every combination of those six fields appears once. It provides the dashboard's data source and prevents repeated records of the same edition from inflating catalog, rating, or price metrics.
 
-El resultado fue una base depurada en la que cada combinación de [artist] [title][ label][ country] [ format ][ release_year_transformed]  aparece una única vez. Esta base constituye la fuente de datos para el dashboard y evita que registros repetidos de una misma edición inflen métricas de catálogo, valoración o precio.
+## Control Column
 
-## Columna de control
+In `Discogs_electronic_cleaning`, I created [duplicate_count] using `SI` and `CONTAR.SI.CONJUNTO`.
 
-En la hoja  Discogs_electronic_cleaning  se creó la columna de control  [duplicate_count] , calculada mediante las funciones  SI  y  CONTAR.SI.CONJUNTO .
-La fórmula comparó cada fila contra el conjunto completo de registros y contabilizó las coincidencias simultáneas en la clave compuesta. Cuando el recuento era superior a 1, la fila se etiquetó como  DUPLICADO ; en caso contrario, como  ÚNICO .
+The formula compares each row with the complete dataset and counts simultaneous matches on the composite key. Counts above 1 are labeled `DUPLICADO`; otherwise, the row is labeled `ÚNICO`.
 
+```excel
 =SI(
   CONTAR.SI.CONJUNTO(
     $A$2:$A$32543; A2;
@@ -279,184 +290,221 @@ La fórmula comparó cada fila contra el conjunto completo de registros y contab
   "DUPLICADO";
   "ÚNICO"
 )
+```
 
-La columna  [duplicate_count]  funcionó como mecanismo de validación y trazabilidad: permitió identificar, filtrar y revisar los registros afectados antes de aplicar cualquier eliminación.
+[duplicate_count] provided validation and traceability: it allowed me to identify, filter, and review affected records before applying any deletion.
 
-## Eliminacion de generos musicales
+## Excluding Musical Genres
 
-En la hoja Discogs_electronic_cleaning dado que el objetivo del análisis es estudiar exclusivamente lanzamientos de música electrónica, se aplicó un filtro sobre la columna  [genre]  para delimitar el universo analítico. Se conservaron los registros clasificados en estilos o subgéneros electrónicos y se excluyeron aquellos asociados a géneros no electrónicos.
+In `Discogs_electronic_cleaning`, because the analysis focuses exclusively on electronic music releases, I filtered [genre] to define the analytical scope. I retained records classified as electronic styles or subgenres and excluded those associated with non-electronic genres.
 
-Esta segmentación permitió asegurar que las métricas reflejadas en el dashboard correspondieran únicamente a publicaciones de música electrónica. La exclusión de registros fuera de este ámbito no constituyó una depuración de errores, sino una decisión de alcance analítico orientada al objetivo del proyecto.
+This ensured that dashboard metrics represented electronic releases only. Excluding records outside that scope was not error correction but an analytical-scope decision aligned with the project's objective.
 
-## Gestion de valores nulos
-Para variables cualitativas decidi remplazar los registros vacios por “Unknown” y en las variables cuantitativas reemplazar los registros encontrados por null, 
+## Null-Value Handling
 
-En el analisis exploratorio identifique valores faltantes en las columnas [country], [styles], se crearon dos columnas auxiliares [country_clean] [styles_clean] y se etiquetaron como  “Unknown” usando las funciones SI ,  CONTAR.SI  y  ESPACIOS para facilitar su identificación en los filtros y visualizaciones del dashboard.  En las columnas [average_rating], [lowest_price], [median_price], [highest_price] se sustituyeron los valores “--” por null mediante la herramienta Buscar y Reemplazar  representando así los datos no disponibles. Se conservaron las filas y no se asignaron ceros a los valores faltantes.
+For qualitative variables, I decided to replace missing values with `Unknown`; for quantitative variables, I replaced the identified entries with null.
 
-## Control y normalizacion de tipo de formato de celdas
+During exploratory analysis, I found missing values in [country] and [styles]. I created [country_clean] and [styles_clean] and labeled missing entries `Unknown` using `SI`, `CONTAR.SI`, and `ESPACIOS`, making them easier to identify in dashboard filters and visualizations.
 
-El dataset se limita a extraer datos incompletos la columna [release_date] es del tipo General, y algunas fechas son strings del tipo fecha corta, otras se limitan solo al año y mes y otras solo al año, a modo de conservar el activo me limite a homogeneizar los datos extrayendo solo el dato en comun, el año de lanzamiento creando la columna [release_year] esta vez del tipo personalizada “aaaa”. 
+In [average_rating], [lowest_price], [median_price], and [highest_price], I replaced `--` with null using Find and Replace to represent unavailable data. I retained the rows and did not assign zeros to missing values.
 
-Creacion de la columna [release_year_transform] a partir de la columna [release_day] 
+## Checking and Normalizing Cell Formats and Types
+
+The dataset contains incomplete date information. [release_date] is in General format: some entries are short-date strings, others contain only a year and month, and others only a year. To preserve the available information, I standardized the common element—the release year—by creating [release_year] and displaying it using the custom format `aaaa`.
+
+Creating [release_year_transform] from [release_day]:
+
+```excel
 =SI(F32504="";"";SI(ESNUMERO(F32504);SI(F32504<10000;F32504;AÑO(F32504));VALOR(IZQUIERDA(ESPACIOS(F32504);4))))
+```
 
-Creacion de la columna [release_year] a partir de la columna [release_year_transform] para normalizar la columna a formato fecha personalizado “aaaa”
+Creating [release_year] from [release_year_transform] to normalize the column to a date displayed with the custom format `aaaa`:
+
+```excel
 =SI(G32504="";"";FECHA(VALOR(G32504);1;1))
+```
 
-En las columnas [have] [want] [num_ratings] transforme el dato de tipo General a Numero, eliminando decimales. 
+I changed [have], [want], and [num_ratings] from General to Number format, removing decimal places.
 
-En las columnas [average_rating] [lowest_price] [median_price] [highest_price] remplaze el . por la ,  para transformar los datos de texto a numero
+In [average_rating], [lowest_price], [median_price], and [highest_price], I replaced periods with commas to convert text values to numbers.
 
-Para realizar un control de tipo para todas las columnas numericas finales se creo la columna [type_control] mediante el metodo =ESNUMERO([@[columna]])
+To check the types of all final numeric columns, I created [type_control] using:
 
-El campo [country] estaba afectado por nombres de paises, territorios, mercados y regiones geograficas por lo que decidi segmentar, paises por un lado y territorios, mercados y regiones por otro.
+```excel
+=ESNUMERO([@[columna]])
+```
 
-Se reclasificaron los valores de la columna [country] , separando las regiones, agrupaciones de mercados y territorios en una nueva columna denominada  [market_regions] . La columna de países se reservó para los valores correspondientes a países individuales. Esta transformación se realizó mediante una lista auxiliar de clasificación y las funciones  SI ,  CONTAR.SI  y  ESPACIOS , sin eliminar registros ni desglosarlos en varias filas.
+[country] contained country names, territories, markets, and geographic regions, so I decided to separate countries from territories, markets, and regions.
 
-Los campos  [country_clean]  y  [market_regions]  se completaron de forma excluyente: los países individuales se conservaron en el primero y las regiones, agrupaciones y territorios se trasladaron al segundo. Por ello, los vacíos generados por esta clasificación no representan pérdida de información. Los registros sin información geográfica en la fuente se identificaron como  "Unknown" .
+I reclassified [country], moving regions, market groups, and territories to a new column, [market_regions]. I reserved the country column for individual countries. This transformation used an auxiliary classification list and `SI`, `CONTAR.SI`, and `ESPACIOS`, without deleting records or splitting them into multiple rows.
 
-En la transformacion de la columna [average_rating] se eliminaron las celdas sin valoracion "—" por valores null, la ausencia de información no debe confundirse con un valor numérico igual a cero.
+[country_clean] and [market_regions] were populated on a mutually exclusive basis: individual countries remained in the former, while regions, groups, and territories moved to the latter. Blanks generated by this classification therefore do not represent information loss. Records without geographic information in the source were labeled `Unknown`.
 
-Cambie los numeros con separadores decimales inconsistentes: algunos valores utilizaban punto y otros coma a valores de tipo numerico con la "," como separador de decimales. Para homogeneizar la información y permitir su uso en cálculos del dashboard, se creó una columna auxiliar average_rating_clean y se transformo a tipo de valor numerico con el valor numérico normalizado a dos decimales.
+For [average_rating], I replaced missing-rating markers with null values: missing information must not be confused with numerical zero.
 
+Some numbers used periods and others commas as decimal separators. To standardize the information and allow dashboard calculations, I created `average_rating_clean`, converted the entries to numeric values with commas as decimal separators, and standardized their display to two decimal places.
+
+```excel
 =SI(M2="--";"";VALOR(SUSTITUIR(M2;".";",")))
+```
 
-La funcion realizó tres operaciones:
-•	Comprobó si la celda original estaba vacía, para conservar los registros sin valoración como celdas vacías.
-•	Reemplazó los puntos por comas mediante  SUSTITUIR , homogeneizando el separador decimal.
-•	Convirtió el texto resultante en un valor numérico mediante  VALOR .
+The function performed three operations:
 
-La columna  [average_rating_clean_2]  contiene las valoraciones medias en formato numérico, con el separador decimal unificado. Esta columna permite calcular indicadores como el promedio de valoración, identificar lanzamientos mejor valorados y realizar comparaciones por estilo, artista, año u otras dimensiones del dashboard.
+- Checked whether the original cell was blank, preserving missing ratings as blank cells.
+- Replaced periods with commas through `SUSTITUIR`, standardizing the decimal separator.
+- Converted the resulting text to a number through `VALOR`.
 
-La columna original  [average_rating] y [average_rating_clean _1] se conservaron como respaldo del proceso de transformacion de los valores de origen. La normalización se realizó en una columna independiente para evitar modificar directamente los datos originales.
+[average_rating_clean_2] contains the average ratings in numeric format with a standardized decimal separator. It supports average-rating indicators, identification of highly rated releases, and comparisons by style, artist, year, or other dashboard dimensions.
 
-Las celdas con ausencia de valoracion se dejaron null.
+I kept [average_rating] and [average_rating_clean_1] as backups of the transformation process. Normalization took place in a separate column to avoid modifying the original data directly.
 
-La columnas [lowest_price] [median_price] [highest_price] estan expresadas como texto anteponiendo un signo monetario al numero con decimales y donde faltan valores figura "-—", en la transformacion se elimino el sígno de  "$"  y converti el separador decimal a "," en todos los casos, luego devolvi el formato de la celda a moneda con signo de "$". Los valores  "--"  deben quedar como celdas null, porque no representan un precio y la ausencia de información no debe confundirse con un valor numérico igual a cero..
+Cells without ratings remained null.
 
-La función  SI  permite devolver un valor u otro según una condición; aquí se utiliza para tratar  "—"  y las celdas vacías como ausencia de precio.
+[lowest_price], [median_price], and [highest_price] were stored as text, with a currency symbol preceding the decimal number and dash markers for missing values. I removed `$`, converted all decimal separators to commas, and then reapplied currency formatting with `$`.
 
+`--` values must remain null, because they do not represent prices and missing information must not be confused with zero.
+
+`SI` returns different results depending on a condition; here, it treats dash markers and blank cells as missing prices.
+
+```excel
 =SI(O(T2="--";T2="");"";VALOR(SUSTITUIR(SUSTITUIR(T2;"$";"");".";",")))
+```
 
-Con esta fórmula realizamos estas operaciones:
-•	Si el valor es "--"  o está vacío, devuelve una celda vacía.
-•	Si contiene un precio, elimina el símbolo "$" .
-•	Reemplaza el punto decimal por ",".
-•	Convierte el resultado en número mediante  VALOR . 
+This formula performs the following:
 
-Tratamiento de estilos musicales y creación del catálogo de consulta
-La columna  styles_clean  contenía uno o varios estilos musicales por lanzamiento, separados por comas. Para facilitar las consultas por estilo individual, se construyó un catálogo único mediante fórmulas de Excel en hojas auxiliares.
+- If the value is `--` or blank, returns a blank cell.
+- If there is a price, removes `$`.
+- Replaces the decimal period with a comma.
+- Converts the result to a number through `VALOR`.
 
-Este procedimiento conservó la columna original y mantuvo una fila por lanzamiento en la tabla principal, evitando multiplicar los registros por cada estilo asociado.
+Musical style treatment and creation of the lookup catalog:
 
-1. Extracción de las combinaciones
-Se creó la hoja  Styles_catalog , con el encabezado  styles  en  A1 . En  A2  se introdujo una referencia estructurada a la columna de origen:
+`styles_clean` contained one or more comma-separated styles per release. To support queries by individual style, I built a unique catalog using Excel formulas in auxiliary worksheets.
+
+This preserved the original column and maintained one row per release in the main table, avoiding multiplication of records for every associated style.
+
+1. Extracting combinations
+
+I created `Styles_catalog` with `styles` in A1. In A2, I entered a structured reference to the source column:
+
+```excel
 =discogs_electronic[styles_clean]
+```
 
-Esta fórmula trasladó las combinaciones de estilos a la hoja auxiliar, manteniendo su vinculación con la tabla principal.
+This transfers the style combinations to the auxiliary worksheet while keeping their link to the main table.
 
-2. Separación y normalización de los estilos
-En  B2  se introdujo la siguiente fórmula y se extendió hasta la última fila con datos:
+2. Splitting and normalizing styles
 
+In B2, I entered the following formula and extended it to the final data row:
+
+```excel
 =SI(A2="";"";ESPACIOS(DIVIDIRTEXTO(A2;",")))
+```
 
-La fórmula dejó en blanco las filas sin información, separó las etiquetas utilizando la coma como delimitador y eliminó espacios sobrantes mediante  ESPACIOS .
+The formula leaves rows without information blank, splits the labels using commas as delimiters, and removes excess spaces using `ESPACIOS`.
 
-Los estilos de cada lanzamiento se distribuyeron horizontalmente en columnas independientes:
+Each release's styles are distributed horizontally across separate columns:
 
-[House,Tech House,Trance,Deep House]:	[House]	[Tech House]	[Trance]	[Deep House]
+```text
+[House,Tech House,Trance,Deep House]: [House] [Tech House] [Trance] [Deep House]
+```
 
-### Construcción del catálogo único de estilos
+### Building the Unique Style Catalog
 
-En la hoja `Styles_list` se generó un catálogo único de estilos musicales
-a partir del rango `B2:AE29972` de la hoja `Styles_catalog`, donde los
-estilos de cada lanzamiento ya se encontraban separados en distintas
-columnas.
+In `Styles_list`, I generated a unique style catalog from `Styles_catalog!B2:AE29972`, where the styles of each release had already been separated into columns.
 
-Para ello se utilizó la siguiente fórmula:
+I used:
 
+```excel
 =LET(styles;ENCOL(Styles_catalog!B2:AE29972;3);ORDENAR(UNICOS(FILTRAR(styles;styles<>""))))
-Genere una hoja nueva llamada Styles_list y construi una lista única y ordenada de los estilos que ya están distribuidos en las columnas de  [Styles_catalog]. No cuenta lanzamientos ni separa por sí misma los textos con comas: consolida los estilos previamente separados.
+```
 
-## Nueva columna: [style_primary]
+I created `Styles_list` and built a unique sorted list of the styles already distributed across the columns of [Styles_catalog]. This does not count releases or split comma-separated text itself: it consolidates previously separated styles.
 
-### Objetivo
+## New Column: [style_primary]
 
-Crear una categoría de estilo principal para poder filtrar el dashboard por un único estilo electrónico. La columna original [styles_clean] puede contener varios estilos separados por comas, por lo que no es adecuada como segmentador directo.
+### Objective
 
-### Regla de transformación
+Create a primary-style category to filter the dashboard by a single electronic style. The original [styles_clean] can contain several comma-separated styles, making it unsuitable as a direct slicer.
 
-La columna [style_primary] conserva únicamente el primer estilo que aparece en [styles_clean], antes de la primera coma.
+### Transformation Rule
 
-Fórmula aplicada en la primera fila de datos:
+[style_primary] retains only the first style in [styles_clean], before the first comma.
 
+Formula applied to the first data row:
+
+```excel
 =SI.ERROR(IZQUIERDA(I2;ENCONTRAR(",";I2)-1);I2)
+```
 
+### Release Counts by Style
 
-### Recuento de lanzamientos por estilo
+In `Analytics`, I built a summary table from the individual-style catalog.
 
-En la hoja `Analytics` se construyó una tabla resumen a partir del catálogo de estilos individuales.
+A formula counts the records in [styles_clean], in `Discogs_electronic_processed_analytics_dashboard`, containing each style. It searches complete labels to avoid partial matches between styles such as House, Deep House, and Tech House.
 
-Mediante una fórmula se contabilizaron los registros de [styles_clean], en la hoja `Discogs_electronic_processed_analytics_dashboard`, que contienen cada estilo.
-La búsqueda se realizó por etiqueta completa para evitar coincidencias parciales entre estilos como House, Deep House y Tech House.
+The same release can be counted under several styles. The sum of style counts may therefore exceed the total number of releases analyzed.
 
-Un mismo lanzamiento puede contabilizarse en varios estilos. Por tanto, la suma de los recuentos por estilo puede superar el número total de lanzamientos analizados.
+The procedure consisted of:
 
-El procedimiento consistió en:
+1. Consolidating styles spread across several columns into one list with `ENCOL`, ignoring blank cells and errors.
+2. Assigning the temporary name `styles` with `LET` to facilitate reuse in the formula.
+3. Excluding empty strings with `FILTRAR`.
+4. Keeping a single occurrence of each style with `UNICOS`.
+5. Sorting alphabetically with `ORDENAR`.
 
-1.	Consolidar los estilos distribuidos en varias columnas en una sola lista mediante  ENCOL , omitiendo celdas vacías y errores.
-2.	Asignar el nombre temporal  styles  a esa lista mediante  LET , facilitando su reutilización dentro de la fórmula.
-3.	Excluir los valores equivalentes a una cadena vacía mediante  FILTRAR .
-4.	Obtener una sola aparición de cada estilo mediante  UNICOS .
-5.	Ordenar alfabéticamente el resultado mediante  ORDENAR .
+The result is a non-repeating catalog of individual styles, supporting lookups and counts in the analysis and dashboard.
 
-El resultado es un catálogo de estilos individuales, sin repeticiones, que sirve como base para las consultas y los recuentos por estilo utilizados en el análisis y el dashboard.
+This does not modify the main table or multiply its records. Release–style associations remain in [styles_clean].
 
-Este procedimiento no modifica la tabla principal ni multiplica sus registros. La asociación entre cada lanzamiento y sus estilos permanece en [styles_clean].
+The catalog alone does not create an automatic relationship with releases or dashboard slicers; those associations are implemented through the corresponding lookup and counting formulas.
 
-El catálogo no establece por sí mismo una relación automática con los lanzamientos ni con los segmentadores del dashboard; esa asociación se resuelve mediante las fórmulas de consulta y recuento correspondientes.
+I identified 307 distinct musical styles and 63,983 release–style associations.
 
-Se identificaron 307 estilos musicales distintos y 63.983 asociaciones entre lanzamientos y estilos.
+One release can belong to several styles, so the sum of style counts exceeds the number of releases. The resulting average is approximately 2.14 styles per release.
 
-Un mismo lanzamiento puede pertenecer a varios estilos, por lo que la suma de los recuentos por estilo supera el número total de lanzamientos.
+### Record Identifiers
 
-La media resultante es de aproximadamente 2,14 estilos por lanzamiento.
+In `Discogs_electronic_cleaning`, in `02_discogs_electronic_data_cleaning.xlsx`, I created a new label, [release_display], because there was no record identifier.
 
-### Identificadores de registro
+I used:
 
-En la hoja Discogs_electronic_cleaning del archivo 02_discogs_electronic_data_cleaning.xlsx se creo una nueva etiqueta llamada [release_display] a falta de un identificador de registro 
-
-Para esto se utilizo la formula:
-
+```excel
 =A2&" — "&B2&" | "&C2&" | "&SI(E2<>"";E2;F2)&" | "&TEXTO(J2;"aaaa")&" | “&K2&" | fila "&FILA()
+```
 
-La etiqueta muestra artista, título, sello, país o región, formato y año. El sufijo de fila evita que dos registros con esos mismos atributos se fusionen en la tabla dinámica. Es una identificación de trabajo, no un identificador permanente de Discogs. 
+The label shows artist, title, label, country or region, format, and year. The row suffix prevents two records with the same attributes from merging in the PivotTable. It is a working identifier, not a permanent Discogs identifier.
 
-## Creacion de nueva columna: `votes_threshold`
-En la hoja `Discogs_electronic_processed`genere la columna `votes_threshold` utilizando en origen `num_ratings` con el objetivo de crear una categoría por intervalos de número de valoraciones para filtrar el Top 10 de lanzamientos mejor valorados. Los intervalos son excluyentes, no umbrales acumulativos: seleccionar `100–199` no equivale a seleccionar todos los lanzamientos con 100 votos o más; `500+` sí corresponde al intervalo abierto de 500 votos o más. La finalidad es distinguir valoraciones respaldadas por distintos niveles de evidencia comunitaria.
+## Creating the New Column: `votes_threshold`
 
-### Regla de transformación
+In `Discogs_electronic_processed`, I created `votes_threshold` from `num_ratings` to categorize rating counts into bands and filter the top ten highest-rated releases.
 
-La columna `votes_threshold` agrupa los valores de `num_ratings` en intervalos de 100 valoraciones:
+The bands are mutually exclusive, not cumulative thresholds: selecting `100–199` is not equivalent to selecting every release with at least 100 ratings; `500+` does correspond to 500 or more ratings. The purpose is to distinguish ratings supported by different levels of community participation.
 
-| Categoría | Regla |
+### Transformation Rule
+
+`votes_threshold` groups `num_ratings` into bands of 100 ratings:
+
+| Category | Rule |
 |---|---|
-| `0–99` | Menos de 100 valoraciones |
-| `100–199` | 100 a 199 valoraciones |
-| `200–299` | 200 a 299 valoraciones |
-| `300–399` | 300 a 399 valoraciones |
-| `400–499` | 400 a 499 valoraciones |
-| `500+` | 500 valoraciones o más |
+| `0–99` | Fewer than 100 ratings |
+| `100–199` | 100 to 199 ratings |
+| `200–299` | 200 to 299 ratings |
+| `300–399` | 300 to 399 ratings |
+| `400–499` | 400 to 499 ratings |
+| `500+` | 500 ratings or more |
 
-La fórmula se aplicó en la primera fila de datos de la columna `votes_threshold`, tomando como referencia la celda `M2`, correspondiente a la primera fila de datos de `num_ratings`:
+I applied the formula to the first data row of `votes_threshold`, referring to M2, the first data cell of `num_ratings`:
 
+```excel
 =SI(M2>=500;"500+";SI(M2>=400;"400–499";SI(M2>=300;"300–399";SI(M2>=200;"200–299";SI(M2>=100;"100–199";"0–99")))))
+```
 
-## Preparación de hojas auxiliares para el análisis de relaciones
+## Preparing Auxiliary Worksheets for Relationship Analysis
 
-### 1. Objetivo
+### 1. Objective
 
-Para responder a la pregunta «¿Qué relación existe entre colección, demanda, valoraciones y precios?», se crearon cinco hojas auxiliares a partir de `Discogs_electronic_processed`:
+To answer “What relationship exists between collection ownership, demand, ratings, and prices?”, I created five auxiliary worksheets from `Discogs_electronic_processed`:
 
 - `Want_price`
 - `Have_price`
@@ -464,92 +512,92 @@ Para responder a la pregunta «¿Qué relación existe entre colección, demanda
 - `Rating_have`
 - `Rating_price`
 
-Estas hojas permiten preparar pares de observaciones válidas, calcular correlaciones de Pearson y construir gráficos de dispersión sin modificar el conjunto de datos procesado.
+These worksheets prepare valid paired observations, calculate Pearson correlations, and support scatterplots without modifying the processed dataset.
 
-La separación por cruces facilita la trazabilidad del análisis: cada hoja conserva únicamente las variables y los registros necesarios para estudiar una relación concreta.
+Separating the variable pairs improves analytical traceability: each sheet contains only the variables and records required to study a particular relationship.
 
-### 2. Fuente de datos y unidad de análisis
+### 2. Data Source and Unit of Analysis
 
-Se utilizaron las siguientes columnas:
+I used the following columns:
 
-| Columna | Variable | Uso |
+| Column | Variable | Use |
 |---|---|---|
-| J | `have` | Presencia del lanzamiento en colecciones |
-| K | `want` | Presencia del lanzamiento en listas de deseos |
-| L | `num_ratings` | Número de valoraciones registradas |
-| M | `average_rating_clean` | Valoración media depurada |
-| O | `median_price_clean` | Precio mediano depurado |
+| J | `have` | Release presence in collections |
+| K | `want` | Release presence on wantlists |
+| L | `num_ratings` | Number of recorded ratings |
+| M | `average_rating_clean` | Cleaned average rating |
+| O | `median_price_clean` | Cleaned median price |
 
-La unidad de análisis es cada registro de lanzamiento del dataset.
+The unit of analysis is each release record. Different editions of a work were not grouped by artist or title.
 
-No se agruparon distintas ediciones de una obra por artista o título.
+Ownership, demand, rating, and price indicators refer to the time of data collection. The 1990–2000 period refers to release years, not the timing of user activity.
 
-Los indicadores de colección, demanda, valoración y precio corresponden al momento de recopilación de los datos. El periodo 1990–2000 se refiere al año de publicación de los lanzamientos, no al momento de actividad de los usuarios.
+### 3. Inclusion Criteria
 
-### 3. Criterios de inclusión
+I applied a valid-record selection specific to each relationship.
 
-Se aplicó una selección de registros válidos específica para cada cruce.
-
-| Hoja | Variable X | Variable Y | Criterio de inclusión |
+| Worksheet | X variable | Y variable | Inclusion criterion |
 |---|---|---|---|
-| `Want_price` | `want` | `median_price_clean` | Ambas variables numéricas |
-| `Have_price` | `have` | `median_price_clean` | Ambas variables numéricas |
-| `Rating_want` | `average_rating_clean` | `want` | Ambas numéricas y `num_ratings > 0` |
-| `Rating_have` | `average_rating_clean` | `have` | Ambas numéricas y `num_ratings > 0` |
-| `Rating_price` | `average_rating_clean` | `median_price_clean` | Ambas numéricas y `num_ratings > 0` |
+| `Want_price` | `want` | `median_price_clean` | Both numeric |
+| `Have_price` | `have` | `median_price_clean` | Both numeric |
+| `Rating_want` | `average_rating_clean` | `want` | Both numeric and `num_ratings > 0` |
+| `Rating_have` | `average_rating_clean` | `have` | Both numeric and `num_ratings > 0` |
+| `Rating_price` | `average_rating_clean` | `median_price_clean` | Both numeric and `num_ratings > 0` |
 
-Los valores ausentes no se sustituyeron por cero. Los registros que no cumplieron los criterios se excluyeron únicamente del cruce correspondiente y se conservaron en la hoja procesada.
+I did not replace missing values with zero. Records failing the criteria were excluded only from the corresponding relationship and retained in the processed worksheet.
 
-El criterio numérico conserva los ceros existentes. Por tanto, esta selección no equivale a exigir valores estrictamente positivos en las variables analizadas.
+The numeric criterion preserves existing zeros, so this selection does not require strictly positive values.
 
-En los cruces con valoración se exigió al menos un voto para evitar tratar los lanzamientos sin valoraciones como si dispusieran de una puntuación válida.
+For rating relationships, I required at least one rating to avoid treating releases without ratings as having a valid score.
 
-### 4. Lógica de implementación
+### 4. Implementation Logic
 
-Cada hoja auxiliar se organizó en dos columnas:
+Each auxiliary worksheet has two columns:
 
-- Columna A: variable representada en el eje X.
-- Columna B: variable representada en el eje Y.
+- Column A: X-axis variable.
+- Column B: Y-axis variable.
 
-La extracción se realizó mediante fórmulas con:
+Extraction uses formulas with:
 
-- `LET`, para definir los rangos y la condición de selección.
-- `ESNUMERO`, para comprobar que las variables fueran numéricas.
-- `FILTRAR`, para devolver los registros que cumplieran la condición.
+- `LET` to define ranges and selection conditions.
+- `ESNUMERO` to verify numeric variables.
+- `FILTRAR` to return qualifying records.
 
-Se aplicó exactamente la misma condición a las dos columnas de cada hoja. De este modo, la fila de salida conserva los valores correspondientes a un mismo lanzamiento.
+I applied exactly the same condition to both columns. Each output row therefore retains values belonging to the same release.
 
-No se filtró ni se ordenó cada variable de forma independiente, ya que esto rompería el emparejamiento necesario para el análisis.
+I did not filter or sort the variables independently, as that would break the pairing required for analysis.
 
-#### Ejemplo: hoja `Want_price`
+#### Example: `Want_price`
 
-En A2 se extrajeron los valores válidos de demanda:
+In A2, I extracted valid demand values:
 
+```excel
 =LET(
 demanda;Discogs_electronic_processed!K2:K29927;
 precio;Discogs_electronic_processed!O2:O29927;
 validos;ESNUMERO(demanda)*ESNUMERO(precio);
 FILTRAR(demanda;validos)
 )
+```
 
-En B2 se utilizó la misma condición para extraer los precios:
+In B2, I used the same condition to extract prices:
 
+```excel
 =LET(
 demanda;Discogs_electronic_processed!K2:K29927;
 precio;Discogs_electronic_processed!O2:O29927;
 validos;ESNUMERO(demanda)*ESNUMERO(precio);
 FILTRAR(precio;validos)
 )
+```
 
-Para `Have_price` se sustituyó el rango de `want` por el de `have`,
-manteniendo el mismo procedimiento.
+For `Have_price`, I substituted the `have` range for `want`, retaining the same procedure.
 
-#### Ejemplo: hoja `Rating_price`
+#### Example: `Rating_price`
 
-En los cruces con valoración se añadió la condición `num_ratings > 0`.
+For rating relationships, I added `num_ratings > 0`. In A2:
 
-La fórmula de A2 fue:
-
+```excel
 =LET(
 valoracion;Discogs_electronic_processed!M2:M29927;
 precio;Discogs_electronic_processed!O2:O29927;
@@ -557,68 +605,79 @@ votos;Discogs_electronic_processed!L2:L29927;
 validos;ESNUMERO(valoracion)*ESNUMERO(precio)*(votos>0);
 FILTRAR(valoracion;validos)
 )
+```
 
-La fórmula de B2 mantuvo las mismas definiciones y condiciones,
-cambiando únicamente la expresión final por:
+B2 retained the same definitions and conditions, changing only the final expression to:
 
+```excel
 FILTRAR(precio;validos)
+```
 
-En `Rating_want` y `Rating_have` se aplicó esta misma lógica,
-sustituyendo el precio por la demanda o la colección, respectivamente.
+I used the same logic in `Rating_want` and `Rating_have`, replacing price with demand or ownership respectively.
 
-### 5. Matrices dinámicas y recuento de observaciones
+### 5. Dynamic Arrays and Observation Counts
 
-Las fórmulas generan matrices dinámicas desde A2 y B2.
-Las referencias `A2#` y `B2#` abarcan los resultados completos devueltos por cada fórmula.
+The formulas generate dynamic arrays from A2 and B2. `A2#` and `B2#` refer to the full results returned by each formula.
 
-El número de observaciones incluidas se obtuvo mediante:
+I counted included observations with:
 
+```excel
 =FILAS(A2#)
+```
 
-Como control de emparejamiento, las dos columnas de una misma hoja deben contener el mismo número de filas.
+As a pairing check, both columns in a worksheet must contain the same number of rows.
 
-Los rangos de origen utilizados son fijos y llegan hasta la fila 29927.
+The source ranges are fixed and extend through row 29927.
 
-### 6. Cálculo de las correlaciones
+### 6. Correlation Calculations
 
-Los coeficientes se calcularon con `COEF.DE.CORREL` sobre las columnas
-filtradas de cada hoja:
+I calculated the coefficients with `COEF.DE.CORREL` over the filtered columns of each worksheet:
 
+```excel
 =COEF.DE.CORREL(Want_price!A2#;Want_price!B2#)
+```
 
+```excel
 =COEF.DE.CORREL(Have_price!A2#;Have_price!B2#)
+```
 
+```excel
 =COEF.DE.CORREL(Rating_want!A2#;Rating_want!B2#)
+```
 
+```excel
 =COEF.DE.CORREL(Rating_have!A2#;Rating_have!B2#)
+```
 
+```excel
 =COEF.DE.CORREL(Rating_price!A2#;Rating_price!B2#)
+```
 
-Los resultados se presentaron con tres decimales y se registraronjunto con el número de pares válidos de cada cruce.
+I displayed results to three decimal places and recorded the valid-pair count for each relationship.
 
-### 7. Bases analíticas y resultados obtenidos
+### 7. Analytical Samples and Results
 
-| Hoja | Pares válidos | Registros excluidos del cruce | Pearson |
+| Worksheet | Valid pairs | Records excluded from the relationship | Pearson |
 |---|---:|---:|---:|
-| `Want_price` | 29.414 | 512 | 0,600 |
-| `Have_price` | 29.414 | 512 | 0,130 |
-| `Rating_want` | 29.192 | 734 | 0,276 |
-| `Rating_have` | 29.132 | 794 | 0,174 |
-| `Rating_price` | 28.903 | 1.023 | 0,271 |
+| `Want_price` | 29,414 | 512 | 0.600 |
+| `Have_price` | 29,414 | 512 | 0.130 |
+| `Rating_want` | 29,192 | 734 | 0.276 |
+| `Rating_have` | 29,132 | 794 | 0.174 |
+| `Rating_price` | 28,903 | 1,023 | 0.271 |
 
-Las exclusiones se calculan respecto a los 29.926 registros originales.
+Exclusions are calculated against the 29,926 original records.
 
-Estas cantidades no deben sumarse entre hojas: un mismo lanzamiento puede quedar excluido de varios cruces.
+These counts must not be added across worksheets: a release may be excluded from several relationships.
 
-Las diferencias entre bases analíticas son compatibles con la aplicación de criterios específicos a distintas variables. Sin una revisión registro a registro, no se atribuyen todas las exclusiones únicamente a valores nulos: también pueden intervenir valores no numéricos o la condición sobre el número de votos.
+Differences between analytical samples are consistent with criteria applied to different variables. Without reviewing individual records, exclusions cannot all be attributed solely to null values: nonnumeric values and the rating-count condition may also contribute.
 
-Asimismo, que dos hojas tengan el mismo número de observaciones no demuestra que contengan exactamente los mismos registros.
+Likewise, identical observation counts do not prove that two worksheets contain exactly the same records.
 
-### 8. Visualización de las relaciones
+### 8. Relationship Visualizations
 
-Se construyó un gráfico de dispersión para cada hoja auxiliar, utilizando los mismos pares empleados en el cálculo de correlación.
+I built a scatterplot for each auxiliary worksheet, using the same paired observations as the correlation calculation.
 
-| Hoja | Eje X | Eje Y | Título del gráfico |
+| Worksheet | X axis | Y axis | Chart title |
 |---|---|---|---|
 | `Want_price` | Want | Median Price | Demand vs Median Price |
 | `Have_price` | Have | Median Price | Collection vs Median Price |
@@ -626,165 +685,169 @@ Se construyó un gráfico de dispersión para cada hoja auxiliar, utilizando los
 | `Rating_have` | Average Rating | Have | Average Rating vs Collection |
 | `Rating_price` | Average Rating | Median Price | Average Rating vs Median Price |
 
-Cada punto representa un registro de lanzamiento.
+Each point represents one release record.
 
-Se conservaron los outliers en esta fase exploratoria y no se aplicaron transformaciones logarítmicas a las variables.
-Los gráficos complementan al coeficiente y permiten examinar la dispersión y la presencia de observaciones alejadas del resto.
+I retained outliers at this exploratory stage and did not apply logarithmic transformations. The charts complement the coefficients, allowing examination of dispersion and observations far from the main concentration.
 
-### 9. Síntesis analítica
+### 9. Analytical Summary
 
-El cruce entre demanda y precio mediano presentó la mayor correlación de estas cinco hojas, con un coeficiente de 0,600. Este resultado respalda la existencia de una asociación lineal positiva entre el interés por obtener un lanzamiento y su precio mediano.
+Demand and median price had the highest correlation among these five worksheets, at 0.600. This supports a positive linear association between interest in obtaining a release and its median price.
 
-La relación entre presencia en colecciones y precio fue mucho menor, con un coeficiente de 0,130. Por tanto, los lanzamientos más coleccionados no son necesariamente los más caros.
+The relationship between collection ownership and price was much smaller, at 0.130. The most widely owned releases are therefore not necessarily the most expensive.
 
-La valoración media presentó asociaciones positivas débiles con:
+Average rating had weak positive associations with:
 
-- La demanda: 0,276.
-- La presencia en colecciones: 0,174.
-- El precio mediano: 0,271.
+- Demand: 0.276.
+- Collection ownership: 0.174.
+- Median price: 0.271.
 
-En conjunto, los resultados muestran que colección, demanda, valoración y precio describen dimensiones relacionadas, pero distintas, del comportamiento observado en la muestra.
+Together, these results show that ownership, demand, rating, and price describe related but distinct dimensions of the behavior observed in the sample.
 
-### 10. Limitaciones
+### 10. Limitations
 
-- La correlación de Pearson resume asociaciones lineales y no demuestra causalidad.
-- Una correlación débil no descarta relaciones no lineales.
-- Los valores extremos pueden influir en los coeficientes.
-- Cada cruce utiliza su propia base de registros válidos; no se impuso una muestra común para todas las comparaciones.
-- Las diferencias entre coeficientes se interpretan descriptivamente; no se realizó una prueba formal para compararlos.
-- En los análisis con valoración, cada lanzamiento recibe el mismo peso, independientemente de su número de votos.
-- Exigir `num_ratings > 0` no garantiza que todas las valoraciones medias tengan el mismo respaldo.
-- La selección numérica no valida por sí sola la moneda, la procedencia ni la plausibilidad de los precios.
-- Los resultados se limitan al dataset analizado y no representan necesariamente la totalidad del mercado de música electrónica.
+- Pearson correlation summarizes linear associations and does not establish causation.
+- A weak correlation does not rule out nonlinear relationships.
+- Extreme values may influence the coefficients.
+- Each relationship uses its own valid sample; I did not impose a common sample across comparisons.
+- Differences between coefficients are interpreted descriptively; no formal comparison test was performed.
+- In rating analyses, every release receives the same weight regardless of rating count.
+- Requiring `num_ratings > 0` does not ensure equal support for all average ratings.
+- Numeric selection alone does not validate currency, provenance, or price plausibility.
+- Results are limited to the analyzed dataset and do not necessarily represent the entire electronic music market.
 
-## `Style_price`: análisis del precio mediano por estilo
+## `Style_price`: Median Price Analysis by Style
 
-Se incorporó la hoja auxiliar `Style_price` con el objetivo de responder a la pregunta:
+I added `Style_price` to answer:
 
-> ¿Qué estilos presentan los precios medianos más elevados?
+> Which styles have the highest median prices?
 
-La hoja permite calcular, para cada etiqueta de estilo:
+For each style label, the sheet calculates:
 
-- El número de lanzamientos con precio numérico.
-- La mediana de sus precios medianos por lanzamiento.
-- Su posición en un ranking de estilos que cumplen un mínimo de observaciones.
+- The number of releases with numeric prices.
+- The median of their individual median release prices.
+- Their position in a style ranking meeting a minimum observation count.
 
-Este análisis complementa el ranking de estilos por volumen de lanzamientos: mide precios, no producción.
+This complements the ranking by release volume: it measures prices, not production.
 
-## Fuente de datos
+## Data Source
 
-Los cálculos utilizan la hoja `Discogs_electronic_processed`, que contiene 29.926 registros, sin incluir el encabezado.
+Calculations use `Discogs_electronic_processed`, containing 29,926 records excluding the header.
 
-| Columna de origen | Variable | Rango utilizado |
+| Source column | Variable | Range used |
 |---|---|---|
 | I | `styles_clean` | `I2:I29927` |
 | O | `median_price_clean` | `O2:O29927` |
 
-La lista de estilos individuales se tomó del catálogo previamente preparado en `Styles_list`.
+The individual-style list comes from the catalog prepared in `Styles_list`.
 
-Los rangos de origen son fijos. Si se incorporan registros después de la fila 29927, será necesario actualizar las referencias.
+Source ranges are fixed. If records are added beyond row 29927, the references must be updated.
 
-### Estructura de la hoja
+### Worksheet Structure
 
-La hoja se organizó en dos bloques:
+I organized the sheet into two blocks:
 
-| Columna | Encabezado | Contenido |
+| Column | Header | Content |
 |---|---|---|
-| A | `style` | Catálogo de estilos individuales |
-| B | `releases_with_price` | Cantidad de lanzamientos del estilo con precio numérico |
-| C | `median_release_price` | Mediana de los precios medianos de esos lanzamientos |
-| E | `Style` | Estilos seleccionados y ordenados para el ranking |
-| F | `Releases with price` | Recuento correspondiente a cada estilo del ranking |
-| G | `Median release price` | Mediana correspondiente a cada estilo del ranking |
+| A | `style` | Individual-style catalog |
+| B | `releases_with_price` | Releases of the style with numeric prices |
+| C | `median_release_price` | Median of those releases' median prices |
+| E | `Style` | Styles selected and sorted for the ranking |
+| F | `Releases with price` | Corresponding count for each ranked style |
+| G | `Median release price` | Corresponding median for each ranked style |
 
-La columna D se dejó como separación visual.
+Column D provides visual separation.
 
-El bloque A:C conserva el resumen completo. El bloque E:G contiene una selección de hasta 100 estilos, ordenada por precio mediano descendente.
+A:C retains the full summary. E:G contains up to 100 styles, sorted by descending median price.
 
-Los bloques se mantuvieron como rangos normales, sin convertirlos en tablas de Excel, para permitir el uso de fórmulas con resultados desbordados.
+I kept the blocks as normal ranges rather than Excel tables to allow formulas with spilled results.
 
-### Identificación de estilos dentro de cada lanzamiento
+### Identifying Styles Within Releases
 
-Un lanzamiento puede contener varias etiquetas en `styles_clean`.
+A release can have several labels in `styles_clean`.
 
-Para identificar un estilo se buscaron coincidencias delimitadas por comas, en lugar de coincidencias parciales de texto.
+I searched for comma-delimited matches instead of partial text matches:
 
-La expresión utilizada fue:
-
+```excel
 ESNUMERO(HALLAR(","&A2&",";","&estilos&","))
+```
 
-Por ejemplo, la búsqueda de `,House,` no coincide con `,Deep House,`.
+For example, searching for `,House,` does not match `,Deep House,`.
 
-Esta lógica presupone que las etiquetas están separadas por comas y que no existen espacios adicionales junto al separador. Su funcionamiento depende de mantener la normalización aplicada a `styles_clean`.
+This assumes comma-separated labels without extra spaces beside delimiters. Its operation depends on preserving the normalization of `styles_clean`.
 
-Cada lanzamiento puede participar en varios grupos si contiene varios estilos. Por tanto, los recuentos por estilo no son categorías excluyentes y no deben sumarse para obtener el total de lanzamientos del dataset.
+A release may appear in several groups. Style counts are therefore not mutually exclusive and must not be summed to obtain total releases.
 
-### Recuento de lanzamientos con precio numérico
+### Counting Releases with Numeric Prices
 
-En B2 se utilizó:
+In B2:
 
+```excel
 =LET(
 estilos;Discogs_electronic_processed!I2:I29927;
 precios;Discogs_electronic_processed!O2:O29927;
 coincide;ESNUMERO(HALLAR(","&A2&",";","&estilos&","));
 SUMAPRODUCTO(--coincide;--ESNUMERO(precios))
 )
+```
 
-La fórmula cuenta los registros que cumplen simultáneamente dos condiciones:
+The formula counts records meeting both conditions:
 
-1. El lanzamiento contiene el estilo indicado en A2.
-2. `median_price_clean` contiene un valor numérico.
+1. The release contains the style specified in A2.
+2. `median_price_clean` is numeric.
 
-Se copió la fórmula hasta el último estilo del catálogo.
+I copied the formula to the last style in the catalog.
 
-Los valores ausentes y los precios almacenados como texto no se incluyeron en el recuento. No se sustituyeron por cero.
+Missing prices and prices stored as text were excluded, not replaced with zero.
 
-El criterio `ESNUMERO` conserva los ceros numéricos existentes: no equivale a exigir precios estrictamente positivos.
+`ESNUMERO` preserves existing numeric zeros; it does not require strictly positive prices.
 
-### 6. Cálculo del precio mediano por estilo
+### 6. Calculating Median Price by Style
 
-En C2 se utilizó:
+In C2:
 
+```excel
 =SI(B2=0;"";LET(
 estilos;Discogs_electronic_processed!I2:I29927;
 precios;Discogs_electronic_processed!O2:O29927;
 coincide;ESNUMERO(HALLAR(","&A2&",";","&estilos&","));
 MEDIANA(FILTRAR(precios;coincide*ESNUMERO(precios)))
 ))
+```
 
-La fórmula:
+The formula:
 
-1. Comprueba si el estilo tiene registros con precio numérico.
-2. Filtra los precios de los lanzamientos asociados al estilo.
-3. Calcula la mediana de los valores seleccionados.
-4. Devuelve una celda visualmente vacía si no hay observaciones válidas.
+1. Checks whether the style has records with numeric prices.
+2. Filters prices of releases associated with the style.
+3. Calculates the median of the selected values.
+4. Returns a visually blank cell if no valid observations exist.
 
-Se copió hasta el último estilo del catálogo.
+I copied it through the last style.
 
-El indicador resultante es la mediana de `median_price_clean` entre lanzamientos. No es una media aritmética ni la mediana de todas las transacciones individuales de Discogs.
+The resulting indicator is the median of `median_price_clean` across releases. It is neither an arithmetic mean nor the median of all individual Discogs transactions.
 
-Cada registro de lanzamiento aporta un valor al cálculo, sin ponderación por número de ventas, usuarios o valoraciones.
+Every release contributes one value, without weighting by sales, users, or ratings.
 
-### Criterio de inclusión en el ranking
+### Ranking Inclusion Criteria
 
-El resumen A:C conserva todos los estilos, incluidos aquellos sin precio numérico o con pocas observaciones.
+A:C retains all styles, including those without numeric prices or with few observations.
 
-Para el ranking E:G se exigió:
+For E:G, I required:
 
-- Una etiqueta de estilo no vacía.
-- Al menos 30 lanzamientos con precio numérico.
-- Una mediana numérica.
+- A nonempty style label.
+- At least 30 releases with numeric prices.
+- A numeric median.
 
-El mínimo de 30 registros se adoptó como criterio práctico para evitar que grupos con muy pocas observaciones dominaran la clasificación principal.
+I adopted the 30-record minimum as a practical criterion to prevent groups with very few observations from dominating the main ranking.
 
-Este umbral no constituye una garantía estadística de representatividad. Los estilos que no lo cumplen no se eliminan del dataset ni del resumen completo; únicamente quedan fuera del ranking seleccionado.
+The threshold is not a statistical guarantee of representativeness. Styles failing it remain in the dataset and full summary; they are excluded only from the selected ranking.
 
-### Generación del ranking dinámico
+### Generating the Dynamic Ranking
 
-El ranking se planteó inicialmente con diez estilos y posteriormente se amplió a un máximo de 100.
+The ranking initially included ten styles and was later expanded to a maximum of 100.
 
-En E2 se utilizó:
+In E2:
 
+```excel
 =LET(
 estilos;$A$2:$A$1000;
 recuentos;$B$2:$B$1000;
@@ -795,103 +858,115 @@ medianas;FILTRAR(precios;validos);
 ordenados;ORDENARPOR(lista;medianas;-1;lista;1);
 INDICE(ordenados;SECUENCIA(MIN(100;FILAS(ordenados))))
 )
+```
 
+The formula:
 
-La fórmula aplica el siguiente procedimiento:
+1. Filters styles meeting the criteria.
+2. Sorts them by descending median price.
+3. Uses alphabetical style order when median values are exactly equal.
+4. Returns up to 100 styles.
 
-1. Filtra los estilos que cumplen los criterios.
-2. Los ordena por precio mediano descendente.
-3. En caso de igualdad exacta en la mediana, utiliza el nombre del estilo en orden alfabético.
-4. Devuelve hasta 100 estilos.
+The expression:
 
-La expresión:
-
+```excel
 MIN(100;FILAS(ordenados))
+```
 
-limita la salida al número de estilos disponibles cuando menos de 100 cumplen el criterio.
+limits output to the available styles when fewer than 100 qualify.
 
-La fórmula presupone que existe al menos un estilo elegible, condición que se cumple en el dataset analizado.
+The formula assumes at least one eligible style, a condition met in the analyzed dataset.
 
-La selección utiliza los valores originales de las celdas, no los valores redondeados que se muestran en pantalla. Dos medianas visualmente iguales a dos decimales pueden tener un orden diferente si su precisión interna difiere.
+Selection uses underlying cell values, not rounded displayed values. Two medians displayed identically to two decimals may sort differently if their internal precision differs.
 
-### Recuperación de los valores asociados
+### Retrieving Associated Values
 
-En F2 se recuperó el número de lanzamientos con precio:
+In F2, I retrieved counts of releases with prices:
 
+```excel
 =BUSCARX(E2#;$A$2:$A$1000;$B$2:$B$1000;"";0)
+```
 
-En G2 se recuperó la mediana del precio:
+In G2, I retrieved median prices:
 
+```excel
 =BUSCARX(E2#;$A$2:$A$1000;$C$2:$C$1000;"";0)
+```
 
-Las fórmulas utilizan coincidencia exacta y toman como referencia la lista desbordada desde E2.
+These formulas use exact matches and reference the spilled list in E2.
 
-De esta manera, los estilos, sus recuentos y sus medianas permanecen alineados según el orden del ranking.
+Styles, counts, and medians therefore remain aligned in ranking order.
 
-Las fórmulas se escriben únicamente en E2, F2 y G2. Las celdas situadas debajo deben permanecer libres para permitir la expansión de los resultados.
+Formulas are entered only in E2, F2, and G2. Cells below must remain free to allow expansion.
 
-Los rangos de consulta llegan hasta la fila 1000. Si el catálogo supera ese límite, deberán ampliarse las referencias de las tres fórmulas.
+Lookup ranges extend through row 1000. If the catalog exceeds that limit, all three formulas must be updated.
 
-### Controles de consistencia
+### Consistency Checks
 
-Se establecieron los siguientes controles para revisar el resultado:
+I established the following checks:
 
-- Cada estilo del ranking debe tener al menos 30 registros con precio.
-- Las medianas deben aparecer ordenadas de mayor a menor.
-- Los recuentos y las medianas de F:G deben coincidir con los valores del mismo estilo en A:C.
-- Las tres columnas del ranking deben tener la misma cantidad de filas.
-- El catálogo de A debe contener una sola entrada por estilo.
-- Los resultados no deben contener errores de desbordamiento ni de referencia.
+- Every ranked style must have at least 30 records with prices.
+- Medians must be sorted from highest to lowest.
+- F:G must match the same style's values in A:C.
+- All three ranking columns must have equal row counts.
+- A must contain only one entry per style.
+- Results must not contain spill or reference errors.
 
-La cantidad de estilos incluidos puede consultarse con:
+The number of included styles can be checked with:
 
+```excel
 =FILAS(E2#)
+```
 
-También pueden comprobarse las longitudes de las columnas asociadas:
+Lengths of the associated columns can also be checked:
 
+```excel
 =FILAS(F2#)
+```
 
+```excel
 =FILAS(G2#)
+```
 
-Los tres resultados deben coincidir.
+All three results must match.
 
-### Gráfico de precios por estilo
+### Style Price Chart
 
-Se construyó un gráfico de barras horizontales con los diez primeros estilos del ranking.
+I created a horizontal bar chart using the first ten ranked styles.
 
-| Elemento | Configuración |
+| Element | Configuration |
 |---|---|
-| Categorías | `E2:E11` |
-| Valores | `G2:G11` |
-| Tipo | Barras agrupadas 2D |
-| Título | `Top 10 Styles by Median Release Price` |
-| Orden visual | Precio mediano más elevado en la parte superior |
-| Etiquetas | Precio con dos decimales |
+| Categories | `E2:E11` |
+| Values | `G2:G11` |
+| Type | 2D clustered bars |
+| Title | `Top 10 Styles by Median Release Price` |
+| Visual order | Highest median price at the top |
+| Labels | Price to two decimal places |
 
-La columna F se conserva como información de apoyo y no se representa como una segunda serie de barras.
+F remains supporting information and is not plotted as a second bar series.
 
-El ranking auxiliar contiene hasta 100 estilos, mientras que el gráfico muestra únicamente los diez primeros.
+The auxiliary ranking contains up to 100 styles, while the chart shows only the first ten.
 
-Se añadió la siguiente nota metodológica:
+I added this methodological note:
 
-> Solo se incluyen estilos con al menos 30 lanzamientos con precio numérico. Cada valor corresponde a la mediana de los precios medianos de los lanzamientos asociados al estilo. Un lanzamiento puede pertenecer a varios estilos.
+> Only styles with at least 30 releases with numeric prices are included. Each value is the median of the median prices of releases associated with the style. One release may belong to several styles.
 
-Se mantuvo el formato monetario existente sin atribuir una moneda específica mientras no se confirme la unidad del campo de origen.
+I retained the existing monetary format without assigning a specific currency until the source field's unit is confirmed.
 
-### Alcance y limitaciones
+### Scope and Limitations
 
-- El análisis describe diferencias de precio entre estilos dentro del dataset.
-- No mide la evolución histórica de los precios ni demuestra revalorización.
-- El periodo 1990–2000 corresponde a los años de publicación de los lanzamientos, no necesariamente al momento de observación de sus precios.
-- Las etiquetas de estilo se solapan y los grupos tienen tamaños distintos.
-- Una diferencia entre medianas no demuestra que el estilo sea la causa del precio.
-- La selección numérica no verifica por sí sola la moneda, la plausibilidad ni la comparabilidad de los precios.
-- No se aplicó una exclusión adicional de valores extremos en este procedimiento.
-- Las fórmulas recalculan los resultados dentro de los rangos definidos; no incorporan automáticamente registros situados fuera de ellos.
+- The analysis describes price differences between styles within the dataset.
+- It does not measure historical price changes or establish appreciation in value.
+- 1990–2000 refers to release years, not necessarily price-observation dates.
+- Style labels overlap and group sizes differ.
+- A difference between medians does not show that style causes price differences.
+- Numeric selection alone does not verify currency, plausibility, or comparability.
+- I applied no additional outlier exclusion in this procedure.
+- Formulas recalculate within defined ranges; they do not automatically include records outside them.
 
-## Evolución anual de estilos: tabla cruzada en `Analytics`
+## Annual Style Evolution: Cross-Tabulation in `Analytics`
 
-Se incorporó a la hoja `Analytics` una tabla cruzada con el objetivo de analizar cómo cambió la presencia de cinco estilos seleccionados entre 1990 y 2000:
+I added a cross-tabulation to `Analytics` to analyze how the presence of five selected styles changed between 1990 and 2000:
 
 - House.
 - Deep House.
@@ -899,112 +974,119 @@ Se incorporó a la hoja `Analytics` una tabla cruzada con el objetivo de analiza
 - Techno.
 - Progressive House.
 
-La selección corresponde a los estilos mencionados en una de las hipótesis iniciales del proyecto.
+The selection corresponds to the styles in one initial hypothesis.
 
-El objetivo es comparar su peso relativo dentro de los lanzamientos de cada año, diferenciando los cambios de composición de las variaciones en el volumen total de publicaciones.
+The objective is to compare their relative presence within each year's releases, distinguishing changes in composition from changes in total release volume.
 
-### Ubicación y organización
+### Location and Organization
 
-La lógica se preparó inicialmente en una hoja denominada `Styles_evolution`.
+I initially prepared the logic in `Styles_evolution`.
 
-Posteriormente, se trasladaron la tabla y sus fórmulas a `Analytics` y se eliminó la hoja independiente. Esta reorganización centraliza los análisis y reduce la cantidad de hojas del libro.
+I later moved the table and formulas to `Analytics` and deleted the separate sheet, centralizing analysis and reducing the number of worksheets.
 
-La tabla de apoyo para el análisis porcentual se construyó mediante fórmulas; no es una tabla dinámica de Excel. Este bloque analítico debe distinguirse del gráfico dinámico final «Selected styles by year», cuya respuesta al segmentador YEAR se comprobó posteriormente. La descripción de porcentajes de esta sección corresponde al análisis auxiliar y no acredita por sí sola la métrica ni el origen exacto de las series del gráfico final.
+The percentage-analysis supporting table uses formulas, not an Excel PivotTable. This must be distinguished from the final `Selected styles by year` PivotChart, whose response to YEAR was checked subsequently. Percentages in this section belong to the auxiliary analysis and do not by themselves establish the metric or exact source of the final chart's series.
 
-Su estructura lógica es:
+Its logical structure is:
 
-| Campo | Contenido |
+| Field | Content |
 |---|---|
-| `year` | Año de publicación, de 1990 a 2000 |
-| `total_releases` | Total de lanzamientos del año |
-| `House` | Proporción anual de lanzamientos con esta etiqueta |
-| `Deep House` | Proporción anual de lanzamientos con esta etiqueta |
-| `Garage House` | Proporción anual de lanzamientos con esta etiqueta |
-| `Techno` | Proporción anual de lanzamientos con esta etiqueta |
-| `Progressive House` | Proporción anual de lanzamientos con esta etiqueta |
+| `year` | Release year, 1990–2000 |
+| `total_releases` | Total releases in the year |
+| `House` | Annual proportion containing this label |
+| `Deep House` | Annual proportion containing this label |
+| `Garage House` | Annual proportion containing this label |
+| `Techno` | Annual proportion containing this label |
+| `Progressive House` | Annual proportion containing this label |
 
-Las coordenadas utilizadas en las fórmulas de esta documentación son ilustrativas y corresponden a la distribución inicial:
+Coordinates in these examples are illustrative and correspond to the initial layout:
 
-- A1:G1: encabezados.
-- A2:A12: años.
-- B2:B12: totales anuales.
-- C2:G12: proporciones por estilo.
+- A1:G1: headers.
+- A2:A12: years.
+- B2:B12: annual totals.
+- C2:G12: style proportions.
 
-En `Analytics`, las referencias a años, totales y encabezados corresponden a la ubicación efectiva del bloque.
+In `Analytics`, year, total, and header references correspond to the actual block location.
 
-### Fuente de datos
+### Data Source
 
-Se utilizó la hoja `Discogs_electronic_processed`, con 29.926 registros y encabezados en la fila 1.
+I used `Discogs_electronic_processed`, with 29,926 records and headers in row 1.
 
-| Columna | Variable | Rango utilizado |
+| Column | Variable | Range used |
 |---|---|---|
 | G | `release_year` | `G2:G29927` |
 | I | `styles_clean` | `I2:I29927` |
 
-No se aplicaron filtros de precio, colección, demanda o valoración. El análisis utiliza todos los lanzamientos comprendidos en cada año.
+No price, ownership, demand, or rating filters were applied. The analysis uses all releases in each year.
 
-Los rangos de origen son fijos. Si el dataset aumenta después de la fila 29927, deberán actualizarse las fórmulas.
+Source ranges are fixed. If the dataset grows beyond row 29927, formulas must be updated.
 
-### Tratamiento del año de publicación
+### Handling Release Years
 
-Durante la implementación se comprobó que `release_year` contiene fechas de Excel, aunque las celdas muestran únicamente el año mediante su formato.
+During implementation, I checked that `release_year` contains Excel dates although the cells display only the year through formatting.
 
-Por este motivo, no se comparó directamente el contenido de la columna G con números como `1990`.
+I therefore did not compare column G directly with numbers such as `1990`.
 
-Los registros de cada año se identificaron mediante dos límites:
+Each year's records were identified using two limits:
 
-- Fecha igual o posterior al 1 de enero del año analizado.
-- Fecha anterior al 1 de enero del año siguiente.
+- On or after January 1 of the analyzed year.
+- Before January 1 of the following year.
 
-La columna `year` de la tabla de análisis contiene años escritos como números enteros, no fechas completas.
+The analysis table's `year` field contains integer years, not full dates.
 
-No se modificó la columna de origen.
+I did not modify the source column.
 
-### Cálculo del total anual de lanzamientos
+### Calculating Annual Release Totals
 
-Con el año situado en A2, la fórmula de referencia para `total_releases` es:
+With the year in A2, the reference formula for `total_releases` is:
 
+```excel
 =CONTAR.SI.CONJUNTO(
 Discogs_electronic_processed!$G$2:$G$29927;">="&FECHA($A2;1;1);
 Discogs_electronic_processed!$G$2:$G$29927;"<"&FECHA($A2+1;1;1)
 )
+```
 
-Se replicó el cálculo para los once años comprendidos entre 1990 y 2000.
+I repeated this calculation for the eleven years from 1990 to 2000.
 
-La utilización de un límite superior exclusivo permite incluir todas las fechas del año sin depender de que los registros estén almacenados específicamente como el 1 de enero.
+An exclusive upper bound includes all dates in the year without depending on records being stored specifically as January 1.
 
-Como comprobación inicial, el recuento de 1990 devolvió 1.757 lanzamientos, coincidiendo con la tabla dinámica anual ya utilizada en el proyecto.
+As an initial check, 1990 returned 1,757 releases, matching the annual PivotTable already used in the project.
 
-### Identificación de etiquetas de estilo
+### Identifying Style Labels
 
-`styles_clean` puede contener varias etiquetas separadas por ",".
+`styles_clean` can contain several comma-separated labels.
 
-Para identificar un estilo se utilizó una búsqueda delimitada:
+I used a delimited search:
 
+```excel
 ESNUMERO(HALLAR(","&C$1&",";","&estilos&","))
+```
 
-La incorporación de "," al inicio y al final permite buscar etiquetas completas.
+Adding commas at the beginning and end supports complete-label searches.
 
-Por ejemplo:
+For example:
 
-- `House` se identifica como una etiqueta independiente.
-- La búsqueda de `House` no cuenta automáticamente `Deep House` ni `Progressive House`.
-- Si un lanzamiento contiene simultáneamente `House` y `Deep House`, participa en ambos grupos.
+- `House` is identified as a separate label.
+- Searching for House does not automatically count Deep House or Progressive House.
+- A release containing both House and Deep House participates in both groups.
 
-Esta lógica presupone que la separación por comas está normalizada y no presenta espacios adicionales junto a los delimitadores.
+This assumes normalized comma separation without extra spaces beside delimiters.
 
-Los encabezados de la tabla deben coincidir con las etiquetas del catálogo.
+Table headers must match the catalog labels.
 
-### Cálculo de la presencia anual por estilo
+### Calculating Annual Style Presence
 
-El indicador utilizado es:
+The indicator is:
 
-Presencia anual del estilo =
-lanzamientos del año que incluyen el estilo /
-total de lanzamientos del año.
+```text
+Annual style presence =
+releases in the year containing the style /
+total releases in the year
+```
 
-La fórmula de referencia, situada inicialmente en C2, es:
+The reference formula, initially in C2, is:
 
+```excel
 =LET(
 fechas;Discogs_electronic_processed!$G$2:$G$29927;
 estilos;Discogs_electronic_processed!$I$2:$I$29927;
@@ -1017,402 +1099,427 @@ SI($B2=0;"";SUMAPRODUCTO(
 --coincide
 )/$B2)
 )
+```
 
-La fórmula:
+The formula:
 
-1. Define los rangos de fechas y estilos.
-2. Identifica la etiqueta indicada en el encabezado.
-3. Selecciona los registros del año de la fila.
-4. Cuenta los lanzamientos que cumplen ambas condiciones.
-5. Divide el recuento entre el total anual.
-6. Devuelve una celda visualmente vacía si el denominador es cero.
+1. Defines date and style ranges.
+2. Identifies the label in the header.
+3. Selects records from the row's year.
+4. Counts releases meeting both conditions.
+5. Divides the count by the annual total.
+6. Returns a visually blank cell if the denominator is zero.
 
-El cálculo se replicó hacia la derecha para los cinco estilos y hacia abajo para los once años.
+I copied the calculation rightward across five styles and downward across eleven years.
 
-Los resultados se almacenan como proporciones y se muestran mediante formato de porcentaje. No se multiplican adicionalmente por 100.
+Results are stored as proportions and displayed as percentages. They are not multiplied by 100 again.
 
-### Denominador y solapamiento de categorías
+### Denominator and Overlapping Categories
 
-El denominador de cada porcentaje es el total de lanzamientos del año, no la suma de apariciones de los cinco estilos.
+The denominator is the year's total release count, not the sum of occurrences of the five styles.
 
-Por tanto:
+Therefore:
 
-- Un lanzamiento puede contribuir al numerador de varios estilos.
-- Los porcentajes de una fila no tienen que sumar 100 %.
-- No se calcula el reparto exclusivo entre los cinco estilos.
-- Los registros sin coincidencia con esos estilos permanecen incluidos en el denominador anual.
+- One release can contribute to several style numerators.
+- A row's percentages need not add to 100%.
+- This is not an exclusive distribution among five styles.
+- Records without these style labels remain in the annual denominator.
 
-El indicador mide la presencia de cada etiqueta en el conjunto anual de lanzamientos.
+The indicator measures each label's presence among all releases in the year.
 
-### Visualización del análisis porcentual y distinción respecto al dashboard
+### Percentage Visualization and Distinction from the Dashboard
 
-La configuración siguiente documenta la visualización del análisis porcentual. No debe atribuirse automáticamente al gráfico dinámico final, que se mantuvo para conservar la interactividad con YEAR.
+The following configuration documents the percentage-analysis visualization. It must not automatically be attributed to the final PivotChart, which was retained to preserve YEAR interactivity.
 
-Para comparar las trayectorias se definió un gráfico de líneas no apiladas, con una serie por estilo.
+I defined a non-stacked line chart with one series per style.
 
-| Elemento | Configuración |
+| Element | Configuration |
 |---|---|
-| Título | `Selected Electronic Styles by Year (1990–2000)` |
-| Eje horizontal | Años de 1990 a 2000 |
-| Eje vertical | Porcentaje del total anual de lanzamientos |
-| Series | House, Deep House, Garage House, Techno y Progressive House |
-| Tipo | Líneas con marcadores, no apiladas |
-| Tabla de apoyo | Porcentajes con dos decimales |
+| Title | `Selected Electronic Styles by Year (1990–2000)` |
+| Horizontal axis | Years 1990–2000 |
+| Vertical axis | Percentage of annual releases |
+| Series | House, Deep House, Garage House, Techno, Progressive House |
+| Type | Non-stacked lines with markers |
+| Supporting table | Percentages to two decimal places |
 
-La columna `total_releases` no se incluye como serie, ya que contiene recuentos y utiliza una unidad distinta.
+`total_releases` is excluded as a series because it contains counts in a different unit.
 
-No se utiliza un gráfico apilado al 100 %, porque los estilos son categorías solapadas.
+I did not use a 100% stacked chart because style categories overlap.
 
-Nota metodológica:
+Methodological note:
 
-> Porcentaje del total de lanzamientos de cada año que incluye cada estilo seleccionado. Las etiquetas pueden solaparse; los porcentajes no suman necesariamente 100 %.
+> Percentage of each year's releases containing each selected style. Labels may overlap; percentages do not necessarily add to 100%.
 
-### Alcance y limitaciones
+### Scope and Limitations
 
-- El análisis describe los lanzamientos incluidos en el dataset, no ventas, ingresos ni audiencia.
-- Una pérdida de participación porcentual no implica necesariamente una disminución del número absoluto de lanzamientos.
-- La selección de cinco estilos responde a la hipótesis inicial y no representa toda la diversidad estilística del dataset.
-- Los resultados no permiten afirmar por sí solos que aumentó o disminuyó la diversidad del mercado.
-- Las etiquetas se analizan de forma independiente, sin agrupar automáticamente subgéneros dentro de una categoría principal.
-- Las variaciones observadas son descriptivas y no identifican sus causas.
-- La centralización en `Analytics` cambia la organización del libro, pero no el criterio de cálculo.
+- The analysis describes dataset releases, not sales, revenue, or audience.
+- A declining percentage does not necessarily imply fewer releases in absolute terms.
+- The five styles reflect the initial hypothesis, not the dataset's full stylistic diversity.
+- Results alone cannot establish whether market diversity increased or decreased.
+- Labels are analyzed independently, without automatically merging subgenres into a main category.
+- Observed changes are descriptive and do not identify causes.
+- Centralizing the analysis in `Analytics` changes workbook organization, not calculation criteria.
 
-## Funciones de control en hoja Analytics
+## Control Functions in `Analytics`
 
-En la hoja Analytics tenemos varias funciones de control e informacion de datos Unique Artists hace un control de valores unicos para toda la columna artistas =FILAS(UNICOS(discogs_electronic_processed[artist]))
+`Analytics` contains several data-checking and information functions.
 
-Missing Data Check hace un control de valores vacios para todas las columnas =CONTAR.BLANCO(discogs_electronic_processed[artist])
+Unique Artists checks unique values across the artist column:
 
-## Respuestas a preguntas planteadas
+```excel
+=FILAS(UNICOS(discogs_electronic_processed[artist]))
+```
 
-1. ¿Cómo evolucionó el número de lanzamientos entre 1990 y 2000?
+Missing Data Check checks blank values across columns:
 
-Observamos que los lanzamientos aumentan, disminuyen o fluctúan entre 1990 y 1994, e identificamos a 1996 como el año máximo de todo el periodo.
-La conclusión se refiere a los lanzamientos presentes en la muestra, no a la totalidad de la producción electrónica mundial. Además, un aumento entre el primer y el último año no implica necesariamente un crecimiento continuo: el gráfico permite distinguir ambas situaciones.
+```excel
+=CONTAR.BLANCO(discogs_electronic_processed[artist])
+```
 
-2. ¿Qué estilos y subgéneros concentraron más lanzamientos discograficos?
+## Answers to the Research Questions
 
-House fue el estilo con mayor presencia en la muestra, con 11.838 lanzamientos asociados, seguido de Techno, con 9.536. Ambos se sitúan claramente por encima del resto de estilos: Progressive House ocupa el tercer puesto con 4.414 lanzamientos, seguido de Tech House, con 3.754, y Electro, con 3.678.
+1. How did the number of releases evolve between 1990 and 2000?
 
-El ranking también muestra una presencia destacada de Ambient y Trance, con 2.494 y 2.133 lanzamientos, respectivamente.
+I observed increases, decreases, and fluctuations between 1990 and 1994, and identified 1996 as the peak year of the entire period.
 
-La hipótesis inicial queda parcialmente respaldada. House, Techno, Progressive House y Deep House figuran entre los diez estilos con más lanzamientos, mientras que Garage House se sitúa en la posición 13.
+The conclusion concerns releases in the sample, not all electronic music production worldwide. An increase between the first and last year does not necessarily imply continuous growth: the chart distinguishes these situations.
 
-Además, Tech House y Electro presentan una frecuencia superior a Deep House y Garage House.
+2. Which styles and subgenres accounted for the most releases?
 
-Estos resultados describen la presencia de cada estilo en la muestra analizada, no su cuota de ventas ni su participación en la totalidad de la producción electrónica del periodo.
+House had the largest presence, with 11,838 associated releases, followed by Techno with 9,536. Both were clearly ahead of the rest: Progressive House ranked third with 4,414, followed by Tech House with 3,754 and Electro with 3,678.
 
-Un mismo lanzamiento puede estar asociado a varios estilos. Por tanto, los recuentos no son excluyentes y no deben sumarse como si representaran lanzamientos diferentes.
+Ambient and Trance also had substantial representation, with 2,494 and 2,133 releases respectively.
 
-3. ¿Qué sellos discográficos fueron más prolíficos?.
+The initial hypothesis is partially supported. House, Techno, Progressive House, and Deep House appear among the ten styles with the most releases, while Garage House ranks 13th.
 
-Virgin encabeza el ranking de la muestra con 315 lanzamientos, seguido de Epic, con 263, y Columbia, con 245. Entre los sellos planteados en la hipótesis inicial, FFRR y Strictly Rhythm presentan una presencia destacada, con 185 y 179 lanzamientos, respectivamente. Deconstruction registra 115 y ocupa la posición 15 de la clasificación original.
+Tech House and Electro are also more frequent than Deep House and Garage House.
 
-Los resultados respaldan parcialmente la hipótesis: algunos de los sellos previstos aparecen entre los más frecuentes, pero ninguno ocupa las primeras posiciones. El ranking describe el número de registros asociados a cada etiqueta de sello en la muestra, no sus ventas, influencia ni producción total durante el periodo.
+These results describe style presence in the analyzed sample, not sales shares or shares of all electronic music production during the period.
 
-Se excluye del ranking la categoría «Not On Label», en Discogs, no representa un sello discográfico único, es una categoría llamada meta-label para registrar lanzamientos sin un sello identificable.
+A release may be associated with several styles. Counts are therefore not mutually exclusive and must not be added as if they represented different releases.
 
-Los registros se conservan en el conjunto de datos.
+3. Which record labels were the most prolific?
 
-4. ¿Qué países concentraron mayor actividad editorial?
+Virgin led the sample with 315 releases, followed by Epic with 263 and Columbia with 245. Among labels in the initial hypothesis, FFRR and Strictly Rhythm had a substantial presence, with 185 and 179 releases respectively. Deconstruction had 115 and ranked 15th in the original classification.
 
-El análisis por países incluye 27.645 registros con país identificado. Se excluyen del ranking 1.012 registros clasificados como «Unknown» y 1.270 sin país individual en  [country_clean], cuya información geográfica se encuentra en [market_zones]. Todos los registros se conservan en el dataset.
+Results partially support the hypothesis: some expected labels appear among the most frequent, but none leads the ranking. It describes records associated with each label name in the sample, not sales, influence, or total production during the period.
 
-Reino Unido [UK] encabeza el ranking con 9.775 lanzamientos, seguido de Estados Unidos con 6.755, Alemania con 3.637 e Italia con 2.606. Países Bajos ocupa la quinta posición, con 1.190 registros.
+I excluded `Not On Label` from the ranking. In Discogs, this does not represent one label but a category called a meta-label for releases without an identifiable record label.
 
-Los resultados respaldan la hipótesis de una presencia destacada de Reino Unido, Estados Unidos, Alemania, Italia, Países Bajos y Francia, ya que todos figuran entre los siete primeros países de la muestra. Bélgica también presenta una participación relevante, situándose por delante de Francia.
+Those records remain in the dataset.
 
-Estos resultados describen la distribución geográfica de los lanzamientos incluidos en el dataset. No representan necesariamente el país de origen de los artistas ni la totalidad de la producción electrónica del periodo. Se excluyen de este ranking las categorías «Unknown» y los registros clasificados únicamente por zona de mercado (null).
+4. Which countries accounted for the most release activity?
 
-5. ¿Qué formato físico predominó y cómo evolucionó?
+The country analysis includes 27,645 records with identified countries. The ranking excludes 1,012 records classified as `Unknown` and 1,270 without an individual country in [country_clean], whose geographic information is in [market_zones]. All records remain in the dataset.
 
-El vinilo fue el formato predominante entre los lanzamientos de la muestra, con 26.940 registros, aproximadamente el 90,02%, seguido del CD, con 2.957 registros el 9,88%. Las demás categorías tuvieron una presencia residual. 
+The United Kingdom [UK] led with 9,775 releases, followed by the United States with 6,755, Germany with 3,637, and Italy with 2,606. The Netherlands ranked fifth with 1,190.
 
-El CD pasa de 96 lanzamientos en 1990 a 420 en 2000. Su máximo se registra en 1999, con 453. También tiene fluctuaciones: por ejemplo, baja de 293 en 1995 a 290 en 1996.
+Results support the expected prominence of the United Kingdom, United States, Germany, Italy, Netherlands, and France, all among the sample's top seven countries. Belgium also had substantial participation, ranking ahead of France.
 
-El CD gana participación: pasa de aproximadamente el 5,5% del total anual en 1990 al 13,2% en 2000, con un máximo cercano al 15,5% en 1999. Aun así, no desplaza al vinilo como formato principal de la muestra. Estos porcentajes se calculan sobre el total de cada año, incluidos todos los formatos.
+These results describe the geographic distribution of releases in the dataset, not necessarily artists' countries of origin or all electronic music production. The ranking excludes `Unknown` and records classified only by market region (null).
 
-Estos resultados respaldan la hipótesis del predominio del vinilo dentro del dataset, pero no permiten afirmar por sí solos que todos esos lanzamientos estuvieran orientados al club o al DJing.
+5. Which physical format dominated, and how did it evolve?
 
-El vinilo aumenta de 1.653 lanzamientos en 1990 a su máximo de 3.221 en 1996. Después disminuye hasta 2.473 en 1999 y repunta a 2.750 en 2000. No presenta, por tanto, un crecimiento continuo.
+Vinyl dominated the sample with 26,940 records, approximately 90.02%, followed by CD with 2,957, or 9.88%. Other categories had a residual presence.
 
-6. ¿Qué lanzamientos registraron mayor interés de colección y demanda?
+CD increased from 96 releases in 1990 to 420 in 2000. Its maximum was 453 in 1999. It also fluctuated: for example, it fell from 293 in 1995 to 290 in 1996.
 
-El lanzamiento con mayor presencia en las colecciones fue "#1, de Mr. Oizo", con 10.643 registros en [have] , seguido de "Knights Of The Jaguar EP, de The Aztec Mystic", con 7.689, y "American Pie, de Madonna", con 7.290. Thomas Bangalter (50% de Daft Punk) destacó por situar tres lanzamientos entre los diez más coleccionados.
+CD gained share, rising from approximately 5.5% of annual releases in 1990 to 13.2% in 2000, with a peak near 15.5% in 1999. Nevertheless, it did not replace vinyl as the sample's main format. These percentages use each year's total, including all formats.
 
-En demanda, 'Knights Of The Jaguar EP" encabezó el ranking con 7.511 registros en  [want] , seguido de "6 Millions Pintades EP, de Pépé Bradock", con 6.838, y "Trax On Da Rocks Vol. 2, de Thomas Bangalter", con 5.390. Los diez lanzamientos más deseados correspondieron a ediciones en vinilo.
+Results support vinyl dominance in the dataset, but do not establish by themselves that all those releases were club- or DJ-oriented.
 
-Cuatro registros coincidieron en ambos top 10, lo que indica una coincidencia parcial entre colección y demanda. Sin embargo, las diferencias de posición muestran que los lanzamientos más coleccionados no son necesariamente los más deseados. Los rankings describen ediciones concretas incluidas en la muestra, no el total agregado de todas las ediciones de una obra.
+Vinyl rose from 1,653 releases in 1990 to a peak of 3,221 in 1996, then fell to 2,473 in 1999 and rebounded to 2,750 in 2000. Growth was therefore not continuous.
 
-Los indicadores reflejan el estado de las colecciones y listas de deseos en el momento de recopilar los datos. El periodo 1990–2000 corresponde al año de publicación de los lanzamientos, no al momento en que los usuarios los añadieron.
+6. Which releases attracted the greatest collection and demand interest?
 
-7. ¿Qué relación existe entre [have], [want], [num_ratings], [average_rating_clean] y [lowest_price_clean], [median_price_clean], [highest_price_clean]?
+The most widely owned release was *#1* by Mr. Oizo, with 10,643 in [have], followed by *Knights Of The Jaguar EP* by The Aztec Mystic with 7,689, and *American Pie* by Madonna with 7,290. Thomas Bangalter (one half of Daft Punk) stood out by placing three releases among the ten most widely owned.
+
+For demand, *Knights Of The Jaguar EP* led with 7,511 in [want], followed by *6 Millions Pintades EP* by Pépé Bradock with 6,838 and *Trax On Da Rocks Vol. 2* by Thomas Bangalter with 5,390. All ten most-wanted releases were vinyl editions.
+
+Four records appeared in both top tens, showing partial overlap between ownership and demand. However, differences in position show that the most widely owned releases are not necessarily the most wanted. Rankings describe specific editions in the sample, not totals across all editions of a work.
+
+The indicators reflect collection and wantlist status at data collection time. The 1990–2000 period refers to release years, not when users added them.
+
+7. What relationship exists between [have], [want], [num_ratings], [average_rating_clean], and [lowest_price_clean], [median_price_clean], [highest_price_clean]?
 
 [have] vs [want]
-Se obtuvo una correlación de Pearson de 0,593, lo que indica una asociación lineal positiva de magnitud moderada. Los lanzamientos con mayor presencia en las colecciones tienden también a registrar un mayor número de usuarios interesados en obtenerlos. Sin embargo, el gráfico muestra una dispersión considerable y una elevada concentración de registros en los valores bajos de ambas variables. También aparecen lanzamientos con niveles excepcionalmente altos de colección o demanda. En conjunto, ambos indicadores están relacionados, pero no son equivalentes ni esta asociación demuestra causalidad.
+
+The Pearson correlation was 0.593, indicating a moderate positive linear association. Releases present in more collections also tended to attract more users interested in obtaining them.
+
+However, the chart shows considerable dispersion and many records concentrated at low values of both variables. It also contains releases with exceptionally high ownership or demand. Overall, the indicators are related but not equivalent, and the association does not establish causation.
 
 [want] vs [median_price_clean]
-Se analizó la relación en 29.414 lanzamientos con valores numéricos en ambas variables. La correlación de Pearson obtenida fue de 0,600, compatible con una asociación lineal positiva de magnitud moderada.
 
-El gráfico muestra, sin embargo, una dispersión considerable, lanzamientos con niveles similares de demanda presentan precios muy diferentes. Además, los mayores precios medianos no corresponden a los registros más deseados. Por tanto, el resultado respalda la hipótesis de una asociación positiva entre demanda y precio dentro de la muestra, pero no una relación proporcional ni una explicación causal.
+I analyzed 29,414 releases with numeric values in both variables. Pearson correlation was 0.600, consistent with a moderate positive linear association.
+
+The chart nevertheless shows considerable dispersion: releases with similar demand can have very different prices. The highest median prices also do not belong to the most-wanted records. The result supports a positive association between demand and price in the sample, not a proportional or causal relationship.
 
 [have] vs [median_price_clean]
-Se analizó la relación en 29.414 lanzamientos con valores numéricos en ambas variables. La correlación de Pearson fue de 0,130, indicando una asociación lineal positiva muy débil. El gráfico muestra que los lanzamientos más coleccionados no son necesariamente los más caros.
 
-En contraste, la correlación entre demanda ( want ) y precio mediano fue de 0,600. Por tanto, en los cruces analizados, la demanda presenta una asociación lineal con el precio mayor que la presencia en colecciones, sin que esto implique causalidad.
+I analyzed 29,414 releases with numeric values in both variables. Pearson correlation was 0.130, indicating a very weak positive linear association. The chart shows that the most widely owned releases are not necessarily the most expensive.
+
+By contrast, demand (`want`) and median price had a correlation of 0.600. In these analyses, demand therefore has a stronger linear association with price than collection ownership, without implying causation.
 
 [average_rating_clean] vs [want]
 
-Se analizó la relación en 29.192 lanzamientos con valores numéricos en ambas variables y al menos una valoración registrada [num_ratings] > 0.
+I analyzed 29,192 releases with numeric values in both variables and at least one recorded rating, [num_ratings] > 0.
 
-Se obtuvo una correlación de Pearson de 0,276, compatible con una asociación lineal positiva débil. Los lanzamientos mejor valorados tienden a presentar una mayor demanda, aunque la
-valoración media, por sí sola, no permite anticipar con precisión el interés por obtener un lanzamiento.
+The Pearson correlation was 0.276, consistent with a weak positive linear association. Higher-rated releases tend to have greater demand, although average rating alone cannot precisely predict interest in obtaining a release.
 
-Los 734 registros que no cumplieron los criterios de inclusión se excluyeron únicamente de este cruce y se conservaron en el dataset procesado.
+The 734 records failing inclusion criteria were excluded only from this relationship and retained in the processed dataset.
 
-El análisis asigna el mismo peso a cada lanzamiento, con independencia de su número de valoraciones. Por tanto, una puntuación basada en pocos votos participa en la correlación igual que otra respaldada por cientos de votos.
+The analysis assigns equal weight to every release, regardless of rating count. A score based on a few ratings therefore contributes just as much as one supported by hundreds.
 
-El resultado describe una asociación y no demuestra que una mejor valoración provoque una mayor demanda.
+This association does not show that higher ratings cause greater demand.
 
 [average_rating_clean] vs [have]
 
-Se analizó la relación en 29.132 lanzamientos con valores numéricos en ambas variables y al menos una valoración registrada [num_ratings] > 0.
+I analyzed 29,132 releases with numeric values in both variables and at least one recorded rating, [num_ratings] > 0.
 
-El coeficiente de Pearson obtenido fue de 0,174, lo que indica una asociación lineal positiva muy débil. Los lanzamientos mejor valorados tienden ligeramente a estar más presentes en las colecciones, pero la relación es limitada: una valoración media elevada no implica necesariamente un mayor número de usuarios que poseen el lanzamiento.
+Pearson correlation was 0.174, a very weak positive linear association. Higher-rated releases tend slightly toward greater collection presence, but a high rating does not necessarily imply many owners.
 
-En comparación con el cruce entre [average_rating_clean] vs [want], cuya correlación fue de 0,276, la asociación con la presencia en colecciones es menor. Esta comparación es descriptiva, ya que ambos análisis utilizan conjuntos de registros válidos que pueden diferir.
+The ownership association is smaller than the 0.276 for [average_rating_clean] vs [want]. This comparison is descriptive because the analyses may use different sets of valid records.
 
-En conclusión, la valoración media presenta poca asociación lineal con  have  dentro de la muestra. El resultado no demuestra causalidad y debe interpretarse considerando que cada lanzamiento recibe el mismo peso en el cálculo, independientemente del número de votos que respalden su valoración media.
+In conclusion, average rating has little linear association with `have` in the sample. Results are not causal and must be interpreted considering that each release receives equal weight regardless of the ratings supporting its average.
 
 [average_rating_clean] vs [median_price_clean]
 
-Se analizó la relación en 28.903 lanzamientos con valores numéricos en ambas variables y al menos una valoración registrada [num_ratings] > 0.
+I analyzed 28,903 releases with numeric values in both variables and at least one recorded rating, [num_ratings] > 0.
 
-El coeficiente de correlación de Pearson fue de 0,271, lo que indica una asociación lineal positiva débil. Los lanzamientos mejor valorados tienden ligeramente a presentar precios medianos más elevados, pero la relación es limitada: una puntuación alta no implica necesariamente un precio alto.
+Pearson correlation was 0.271, indicating a weak positive linear association. Higher-rated releases tend slightly toward higher median prices, but a high score does not necessarily imply a high price.
 
-El resultado no demuestra causalidad. Además, cada lanzamiento recibe el mismo peso en el cálculo, independientemente del número de votos que respalden su valoración media. Los 1.023 registros que no cumplieron los criterios de inclusión se excluyeron únicamente de este cruce y se conservaron en el dataset procesado.
+The result does not establish causation. Each release receives equal weight regardless of rating count. The 1,023 records failing inclusion criteria were excluded only from this relationship and retained in the processed dataset.
 
-## Balance final 
+## Overall Assessment
 
-La hipótesis de que los lanzamientos más deseados pueden presentar precios medianos más altos queda respaldada dentro de la muestra por la correlación de 0,600.
+The hypothesis that more-wanted releases may have higher median prices is supported within the sample by the 0.600 correlation.
 
-La hipótesis sobre valoración e interés de colección recibe un respaldo limitado: las asociaciones son positivas, pero débiles. Además, no podemos concluir que valoración y precio 
-carezcan de relación: obtuvimos una asociación positiva débil de 0,271, similar en magnitud a la observada entre valoración y demanda.
+The hypothesis linking ratings with collection interest receives limited support: associations are positive but weak. Nor can we conclude that rating and price are unrelated: their positive correlation was 0.271, similar in magnitude to the relationship between rating and demand.
 
-Estos resultados son descriptivos, utilizan bases válidas que pueden diferir y no permiten establecer qué variable causa a otra.
+These results are descriptive, use valid samples that may differ, and cannot establish which variable causes another.
 
+8. Which styles reached the highest market prices?
 
-8. ¿Qué estilos alcanzaron mayores precios de mercado?
+Freetekno and Minimal Techno had the highest medians in the ranking, both displayed as $16.30, supported by 38 and 72 releases with prices respectively.
 
-Freetekno y Minimal Techno presentaron las medianas más elevadas del ranking, ambos con un valor mostrado de $16,30, respaldados por 38 y 72 lanzamientos con precio, respectivamente.
+They were followed by Bleep at $10.87 with 202 records, Dub Techno at $10.76 with 59, and IDM at $8.70 with 318.
 
-A continuación se situaron Bleep, con $10,87 y 202 registros; Dub Techno, con $10,76 y 59 registros; e IDM, con $8,70 y 318 registros.
+Among styles with larger samples, Minimal, Acid, Experimental, and Ambient also stood out. In contrast, House and Techno, which led by release volume, had medians of $3.24 and $5.43 respectively.
 
-Entre los estilos con bases más amplias, también destacaron Minimal, Acid, Experimental y Ambient. En contraste, House y Techno, que lideraban el análisis de volumen de lanzamientos, registraron medianas de $3,24 y $5,43, respectivamente
+The highest-volume styles were not necessarily those with the highest median prices. Freetekno and Minimal Techno led among styles with at least 30 records with prices, followed by Bleep and Dub Techno.
 
-Los estilos con mayor volumen de lanzamientos no fueron necesariamente los que presentaron precios medianos más elevados. Freetekno y Minimal Techno encabezaron el ranking entre los estilos con al menos 30 registros con precio, seguidos por Bleep y Dub Techno.
+These are descriptive differences between style labels, not evidence that style determines a release's value. Nor do they demonstrate historical appreciation, since the analysis compares observed prices for releases published in 1990–2000, not price changes over time.
 
-Los resultados muestran diferencias descriptivas de precio entre las etiquetas de estilo, pero no permiten afirmar que el estilo determine el valor de un lanzamiento. Tampoco demuestran una revalorización histórica, ya que se comparan los precios recogidos en el dataset para lanzamientos publicados entre 1990 y 2000, no la evolución de sus precios a lo largo del tiempo.
+Group sizes differ and style labels overlap: a release may contribute to several styles.
 
-La lectura debe considerar que los grupos tienen tamaños distintos y que las etiquetas se solapan: un mismo lanzamiento puede contribuir al resultado de varios estilos.
+9. Which artists and labels were associated with the highest-rated releases?
 
-9. ¿Qué artistas y sellos aparecen asociados a los lanzamientos más valorados?
+In [Top_rated_releases], I selected the ten releases with the highest average ratings among those with at least 500 ratings, sorted by descending score and, for ties, by rating count.
 
-En la hoja auxiliar [Top_rated_releases] se seleccionaron los diez lanzamientos con mayor valoración media entre aquellos con al menos 500 votos, ordenados por puntuación descendente y, en caso de empate, por número de valoraciones. Los resultados que siguen corresponden a ese análisis auxiliar. El gráfico del dashboard utiliza otra implementación: una tabla dinámica en `Analytics`, un bloque de salida y el segmentador `Votes threshold`. Por tanto, el mínimo fijo y el desempate de esta hoja no deben atribuirse automáticamente al gráfico interactivo.
-Choice encabezó el ranking con Acid Eiffel / How Do You Plead?, publicado por Fragile Records, con una valoración de $4,82 y 771 votos. Le siguieron Galaxy 2 Galaxy, con $4,78 y 911 votos, y Pépé Bradock con Burning, con $4,77 y 1.039 votos. También aparecieron Aril Brikha, Sasha, Drexciya, The Aztec Mystic, DJ Rolando, Ron Trent y Maurizio.
+The following results refer to that auxiliary analysis. The dashboard chart uses a different implementation: a PivotTable in `Analytics`, an output block, and the `Votes threshold` slicer. The auxiliary worksheet's fixed minimum and tie-breaker must therefore not automatically be attributed to the interactive chart.
 
-Por sellos, Underground Resistance concentró cuatro de los diez registros y Fragile Records dos. Kif Recordings, Deconstruction, Djax-Up-Beats y Maurizio estuvieron representados por un lanzamiento cada uno. Por tanto, Underground Resistance y Fragile Records destacaron por su presencia en esta selección de lanzamientos altamente valorados.
+Choice led with *Acid Eiffel / How Do You Plead?*, released by Fragile Records, with a rating of $4.82 and 771 ratings. Galaxy 2 Galaxy followed with $4.78 and 911 ratings, then Pépé Bradock with *Burning*, at $4.77 and 1,039 ratings. Aril Brikha, Sasha, Drexciya, The Aztec Mystic, DJ Rolando, Ron Trent, and Maurizio also appeared.
 
-## Contraste con las hipótesis iniciales
+By label, Underground Resistance accounted for four of the ten records and Fragile Records for two. Kif Recordings, Deconstruction, Djax-Up-Beats, and Maurizio each appeared once. Underground Resistance and Fragile Records therefore stood out within this selection of highly rated releases.
 
-Esta pregunta aporta un resultado exploratorio, pero no valida ni descarta directamente ninguna de las hipótesis iniciales:
+## Comparison with the Initial Hypotheses
 
-La hipótesis sobre sellos especialmente activos se refiere al número de publicaciones, mientras que este ranking analiza la valoración de lanzamientos concretos. La presencia de Deconstruction, uno de los sellos mencionados inicialmente, no basta para confirmar que estuviera entre los más productivos.
+This question provides an exploratory result but does not directly validate or reject an initial hypothesis.
 
-Este hallazgo complementa el estudio de los sellos por volumen de publicaciones, pero no demuestra que sean los más productivos ni los mejor valorados en el conjunto de sus catálogos.
+The hypothesis about particularly active labels concerns publication counts, while this ranking concerns ratings of individual releases. Deconstruction's presence, although it was an initially proposed label, does not establish that it was among the most productive.
 
-La hipótesis sobre la relación entre [num_ratings], [want] y precio debe contrastarse con los cruces de la pregunta 7, no con este ranking.
+This finding complements the label-volume analysis but does not establish that these labels were the most productive or highest-rated across their whole catalogs.
 
-El mínimo de 500 votos delimita la selección a lanzamientos con mayor participación de usuarios, pero no convierte el resultado en una clasificación representativa de todos los lanzamientos.
+The hypothesis about [num_ratings], [want], and price must be assessed using the relationships in question 7, not this ranking.
 
-10.	¿Cómo cambió la composición del mercado electrónico a lo largo de la década?
+The 500-rating minimum limits selection to releases with greater user participation, but does not make the ranking representative of all releases.
 
-Entre 1990 y 2000, la composición de los lanzamientos analizados experimentó cambios de formato, estilo y distribución geográfica. El vinilo conservó su predominio, aunque el CD ganó participación. Entre los estilos seleccionados, House perdió peso relativo, Techno destacó especialmente al comienzo del periodo y Progressive House amplió su presencia. Geográficamente, Reino Unido consolidó su posición, Alemania y Francia aumentaron su participación y Estados Unidos terminó con un peso menor que en 1990.
+10. How did the composition of the electronic music market change throughout the decade?
 
-Los resultados describen cambios en la composición del dataset, no cuotas de ventas ni relaciones causales. Una caída porcentual no implica necesariamente una reducción de publicaciones, y la evolución de cinco estilos no permite caracterizar toda la diversidad de la música electrónica. La interpretación geográfica también debe considerar los registros sin país identificado o clasificados únicamente por zona de mercado.
+Between 1990 and 2000, the analyzed releases changed in format, style, and geographic composition. Vinyl remained dominant, while CD gained share.
 
-Los veredictos siguientes son descriptivos: indican hasta qué punto los resultados del dataset respaldan cada planteamiento. No equivalen a pruebas estadísticas formales ni permiten generalizar automáticamente a todo el mercado de música electrónica.
+Among the selected styles, House lost relative presence, Techno was particularly prominent early in the period, and Progressive House expanded. Geographically, the United Kingdom strengthened its position, Germany and France increased their shares, and the United States ended with a smaller share than in 1990.
 
-## 1. El número de lanzamientos creció durante la primera mitad de los años noventa
+These results describe changes in dataset composition, not sales shares or causal relationships. A percentage decline does not necessarily mean fewer releases, and the evolution of five styles cannot characterize all electronic music diversity. Geographic interpretation must also consider records without identified countries or classified only by market region.
 
-Veredicto: respaldada como tendencia general, pero no como crecimiento continuo.
+The following verdicts are descriptive: they indicate how far dataset findings support each proposition. They are not formal statistical tests and cannot automatically be generalized to the entire electronic music market.
 
-Los lanzamientos aumentaron de 1.757 en 1990 a 2.394 en 1994 y alcanzaron 3.072 en 1995. Sin embargo, en 1994 se produjo una pequeña disminución respecto a los 2.418 registros de 1993. El máximo de todo el periodo analizado llegó en 1996, con 3.516 lanzamientos.
+## 1. Release Counts Grew During the First Half of the 1990s
 
-Por tanto, el dataset respalda una expansión entre el inicio y mediados de los noventa, con fluctuaciones interanuales.
+Verdict: supported as a general trend, but not as continuous growth.
 
-## 2. El vinilo fue el formato dominante, especialmente en lanzamientos orientados al club y al DJing
+Releases increased from 1,757 in 1990 to 2,394 in 1994 and reached 3,072 in 1995. However, 1994 saw a small decrease from 2,418 in 1993. The period's maximum was 3,516 in 1996.
 
-Veredicto: parcialmente respaldada.
+The dataset therefore supports expansion from the early to mid-1990s, with year-to-year fluctuations.
 
-El predominio del vinilo queda claramente respaldado: reúne 26.940 de los 29.926 lanzamientos, aproximadamente el 90,02 % del total. Además, mantuvo una participación anual superior al 84 % durante todo el periodo.
+## 2. Vinyl Was the Dominant Format, Especially for Club- and DJ-Oriented Releases
 
-No obstante, el análisis no estableció una clasificación específica de lanzamientos orientados al club o al DJing. En consecuencia, esa parte de la hipótesis queda sin comprobar.
+Verdict: partially supported.
 
-## 3. House, Deep House, Garage House, Techno y Progressive House concentraron una parte relevante de la producción
+Vinyl dominance is clearly supported: 26,940 of 29,926 releases, approximately 90.02% of the total. Its annual share also remained above 84% throughout the period.
 
-Veredicto: parcialmente respaldada; los cinco estilos no tuvieron el mismo peso.
+However, the analysis did not establish a specific club- or DJ-oriented release classification. That component remains untested.
 
-La evolución anual confirma una presencia especialmente elevada de House y Techno. House aparece aproximadamente en el 57 % de los lanzamientos de 1990 y en el 31 % de los de 2000; Techno alcanza alrededor del 47 % en 1991–1992. Progressive House amplía su presencia desde aproximadamente el 1 % inicial hasta el 18 % en 2000. Deep House y Garage House presentan participaciones menores.
+## 3. House, Deep House, Garage House, Techno, and Progressive House Accounted for a Substantial Share of Production
 
-La hipótesis se sostiene mejor como una combinación de estilos de gran volumen y otros de presencia más limitada, no como un dominio equivalente de los cinco.
+Verdict: partially supported; the five styles did not carry equal weight.
 
-No se calculó su concentración conjunta sin duplicados: los porcentajes no deben sumarse porque un mismo lanzamiento puede incluir varias etiquetas de estilo.
+Annual evolution confirms particularly high House and Techno presence. House appears in approximately 57% of 1990 releases and 31% in 2000; Techno reaches around 47% in 1991–1992.
 
-## 4. Existieron sellos especialmente activos, como Strictly Rhythm, Nervous Records, Network Records, Cutting Records, FFRR, Deconstruction, Positiva o Perfecto
+Progressive House expands from approximately 1% initially to 18% in 2000. Deep House and Garage House have smaller shares.
 
-Veredicto: parcialmente respaldada para la selección propuesta.
+The hypothesis is better supported as a combination of high-volume styles and others with more limited presence, not equivalent dominance by all five.
 
-El ranking confirma la actividad de algunos sellos mencionados: FFRR registra 185 lanzamientos, Strictly Rhythm 179 y Deconstruction 115. Sin embargo, los primeros puestos generales corresponden a Virgin, con 315; Epic, con 263; y Columbia, con 245 los sellos mas mainstream con fuerte presencia en todos los mercados.
+I did not calculate their combined concentration without duplicates: percentages must not be added because a release may contain multiple style labels.
 
-Por tanto, algunos ejemplos iniciales destacan, pero no encabezan el ranking. No se dispone en esta síntesis de los recuentos individuales de los otros cinco sellos propuestos, por lo que no corresponde confirmar la lista completa.
+## 4. Certain Labels Were Particularly Active, Such as Strictly Rhythm, Nervous Records, Network Records, Cutting Records, FFRR, Deconstruction, Positiva, and Perfecto
 
-La categoría `Not On Label` se conserva en los datos, pero no se interpreta como una discográfica única ni se incluye en el ranking de sellos identificados.
+Verdict: partially supported for the proposed selection.
 
-## 5. Los lanzamientos más deseados pueden presentar precios medianos más elevados
+The ranking confirms the activity of some proposed labels: FFRR had 185 releases, Strictly Rhythm 179, and Deconstruction 115. The overall leaders, however, were Virgin with 315, Epic with 263, and Columbia with 245—the more mainstream labels with a strong presence across markets.
 
-Veredicto: respaldada descriptivamente.
+Some initial examples therefore stand out but do not lead. This summary does not provide individual counts for the other five proposed labels, so the full list cannot be confirmed.
 
-En el cruce entre [want] y [median_price_clean] se obtuvo una correlación de Pearson de 0,600, sobre 29.414 pares válidos.
+`Not On Label` remains in the data but is not interpreted as a single record company or included in the identified-label ranking.
 
-Esto respalda una asociación lineal positiva entre demanda registrada y precio mediano dentro de la muestra. No significa que todos los lanzamientos más deseados sean más caros ni demuestra que la demanda sea la causa del precio.
+## 5. More-Wanted Releases May Have Higher Median Prices
 
-## 6. La valoración media puede relacionarse con el interés de colección, aunque no necesariamente con el precio de mercado
+Verdict: descriptively supported.
 
-Veredicto: parcialmente respaldada y matizada por los resultados.
+[want] and [median_price_clean] had a Pearson correlation of 0.600 across 29,414 valid pairs.
 
-Los coeficientes obtenidos fueron:
+This supports a positive linear association between recorded demand and median price within the sample. It does not mean every more-wanted release is more expensive or that demand causes price.
 
-| Cruce | Correlación de Pearson | Pares válidos |
+## 6. Average Rating May Relate to Collection Interest, Though Not Necessarily to Market Price
+
+Verdict: partially supported and qualified by the findings.
+
+The coefficients were:
+
+| Relationship | Pearson correlation | Valid pairs |
 |---|---:|---:|
-| [average_rating_clean] y [have] | 0,174 | 29.132 |
-| [average_rating_clean] y [want] | 0,276 | 29.192 |
-| [average_rating_clean] y [median_price_clean] | 0,271 | 28.903 |
+| [average_rating_clean] and [have] | 0.174 | 29,132 |
+| [average_rating_clean] and [want] | 0.276 | 29,192 |
+| [average_rating_clean] and [median_price_clean] | 0.271 | 28,903 |
 
-La valoración presenta una asociación positiva muy débil con la presencia en colecciones y asociaciones positivas débiles con demanda y precio.
+Ratings have a very weak positive association with ownership and weak positive associations with demand and price.
 
-Por tanto, no corresponde concluir que la valoración se relaciona con la colección, pero no con el precio: ambos cruces muestran asociaciones positivas, y la correlación con precio es numéricamente mayor que la obtenida con [have].
+It is therefore inappropriate to conclude that ratings relate to ownership but not to price: both relationships are positive, and the price coefficient is numerically larger than that for [have].
 
-Las comparaciones entre coeficientes son descriptivas, utilizan bases diferentes y no se sometieron a una prueba formal de diferencias.
+Comparisons between coefficients are descriptive, use different samples, and were not formally tested for differences.
 
-## 7. Estados Unidos, Reino Unido, Alemania, Italia, Países Bajos y Francia concentraron una parte importante de la producción
+## 7. The United States, United Kingdom, Germany, Italy, Netherlands, and France Accounted for a Large Share of Production
 
-Veredicto: respaldada dentro del dataset, con diferencias importantes entre países.
+Verdict: supported within the dataset, with substantial country differences.
 
-Los seis países suman 24.803 registros de los 29.926 analizados, aproximadamente el 82,88 % del total. Reino Unido y Estados Unidos encabezan el conjunto, seguidos por Alemania e Italia; Países Bajos y Francia tienen participaciones menores.
+Together, the six countries account for 24,803 of 29,926 records, approximately 82.88% of the total. The United Kingdom and United States lead, followed by Germany and Italy; the Netherlands and France have smaller shares.
 
-La concentración no fue estática: entre 1990 y 2000, Reino Unido pasó del 30,39 % al 35,27 %, Alemania del 7,46 % al 14,98 % y Francia del 1,14 % al 4,83 %. Estados Unidos descendió del 31,36 % al 18,33 %, e Italia del 8,42 % al 4,51 %.
+The concentration was not static: between 1990 and 2000, the United Kingdom rose from 30.39% to 35.27%, Germany from 7.46% to 14.98%, and France from 1.14% to 4.83%. The United States fell from 31.36% to 18.33%, and Italy from 8.42% to 4.51%.
 
-La conclusión se refiere a la clasificación geográfica de los lanzamientos, no a la nacionalidad de los artistas, el lugar de fabricación o las ventas.
+The conclusion concerns release geography, not artist nationality, manufacturing location, or sales.
 
-## Resumen de conclusiones
+## Summary of Conclusions
 
-El análisis exploratorio respalda una expansión general del número de lanzamientos entre el inicio y mediados de los noventa, el predominio del vinilo y una elevada concentración geográfica en los seis países propuestos. También identifica diferencias importantes entre estilos y sellos, por lo que las selecciones iniciales requieren matices: no todos los nombres planteados ocuparon posiciones equivalentes.
+The exploratory analysis supports a general expansion in releases from the early to mid-1990s, vinyl dominance, and high geographic concentration in the six proposed countries.
 
-En los cruces realizados, la demanda registrada mostró una asociación positiva con el precio mediano. La valoración media presentó relaciones más débiles con colección, demanda y precio, sin que estos resultados permitan establecer causalidad.
+It also identifies substantial differences between styles and labels, qualifying the initial selections: not all proposed names held equivalent positions.
 
-Las hipótesis se consideran respaldadas o parcialmente respaldadas únicamente dentro del alcance del dataset y de los criterios aplicados. Las partes no comprobadas se mantienen expresamente como limitaciones, sin ampliar el análisis para resolverlas en esta versión.
+Recorded demand showed a positive association with median price. Average ratings had weaker relationships with ownership, demand, and price, without establishing causation.
 
-## Implementación final del dashboard y comprobaciones funcionales de segmentadores y macro
+Hypotheses are considered supported or partially supported only within the dataset's scope and applied criteria. Untested components remain explicit limitations, without expanding the analysis to address them in this version.
 
-## Importación y actualización de datos
+## Final Dashboard Implementation and Functional Checks of Slicers and Macro
 
-El archivo `01_discogs_electronic.csv` se importó mediante **Datos → Obtener datos (Power Query)**. 
+## Data Import and Refresh
 
-La hoja procesada utilizada en los cálculos es `Discogs_electronic_processed.xlsm`.
+I imported `01_discogs_electronic.csv` through Data → Get Data (Power Query).
 
-Al ejecutar **Datos → Actualizar todo**, Excel mostró un aviso de conexión a un origen externo. Se identificó esa conexión como la importación del CSV del proyecto.
+The processed worksheet used in calculations is `Discogs_electronic_processed.xlsm`.
 
-Se decidió no incluir **Actualizar todo** en la macro de restablecimiento de filtros: la actualización del origen y el restablecimiento de la selección se mantienen como operaciones separadas.
+When running Data → Refresh All, Excel displayed a warning about connecting to an external source. I identified the connection as the imported project CSV.
 
-## Segmentador YEAR y gráficos dinámicos
+I decided not to include Refresh All in the filter-reset macro: source refresh and selection reset remain separate operations.
 
-Controla las tablas dinámicas utilizadas por:
+## YEAR Slicer and PivotCharts
+
+It controls the PivotTables used by:
 
 - [Releases by year]
 - [Formats by year]
 - [Selected styles by year]
 
-La tabla auxiliar de proporciones anuales por estilos documentada anteriormente sigue siendo un análisis diferente. No se atribuyen sus porcentajes, denominadores o rangos al gráfico dinámico final sin comprobar directamente sus series. La revisión confirma la interactividad de este último, no una equivalencia entre ambos bloques.
+The annual style-proportion table documented earlier remains a separate analysis. Its percentages, denominators, or ranges are not attributed to the final PivotChart without checking the series directly. The review confirms the latter's interactivity, not equivalence between the two blocks.
 
-## Conexión de YEAR con el recuento por estilos
+## Connecting YEAR to Style Counts
 
-`Top 10 styles by release count` se alimenta de una tabla normal agregada por estilos, no directamente de una tabla dinámica. Para trasladar la selección de años a sus cálculos, se incorporó una tabla dinámica auxiliar en `Analytics`, conectada al mismo segmentador YEAR.
+`Top 10 styles by release count` uses a normal aggregated style table, not a PivotTable directly. To transfer selected years into its calculations, I added an auxiliary PivotTable in `Analytics`, connected to the same YEAR slicer.
 
-| Elemento | Ubicación o función |
+| Element | Location or function |
 |---|---|
-| Lista de años seleccionados | `Analytics!B44:B54` |
-| Total general en la disposición observada | `Analytics!B55` |
-| Columna de años del origen | `Discogs_electronic_processed!G:G` |
-| Columna de estilos del origen | `Discogs_electronic_processed!I:I` (`styles_clean`) |
-| Nueva medida de la tabla normal | `Releases_selected_year` |
-| Primera celda de cálculo confirmada | `Analytics!K11` |
+| Selected-year list | `Analytics!B44:B54` |
+| Grand total in the observed layout | `Analytics!B55` |
+| Source year column | `Discogs_electronic_processed!G:G` |
+| Source style column | `Discogs_electronic_processed!I:I` (`styles_clean`) |
+| New measure in the normal table | `Releases_selected_year` |
+| First confirmed calculation cell | `Analytics!K11` |
 
-El gráfico utiliza los siguientes rangos:
+The chart uses:
 
-Valores: =Analytics!$K$11:$K$20
-Etiquetas: =Analytics!$I$11:$I$20
+```excel
+Values: =Analytics!$K$11:$K$20
+Labels: =Analytics!$I$11:$I$20
+```
 
-## Top 10 de lanzamientos mejor valorados: dos implementaciones
+## Top 10 Highest-Rated Releases: Two Implementations
 
-## Análisis auxiliar `Top_rated_releases`
+## Auxiliary Analysis: `Top_rated_releases`
 
-La hoja auxiliar utiliza un mínimo fijo de 500 votos y ordena los lanzamientos por valoración descendente, con número de votos como desempate. Los resultados narrados en la pregunta de análisis 9 corresponden a esta selección.
+The auxiliary worksheet uses a fixed minimum of 500 ratings and sorts releases by descending score, using rating count as a tie-breaker. The findings in research question 9 refer to that selection.
 
-En ese análisis, Choice — *Acid Eiffel / How Do You Plead?*, de Fragile Records, encabeza el ranking con 4,82 y 771 votos.
+In that analysis, Choice — *Acid Eiffel / How Do You Plead?*, on Fragile Records, leads with 4.82 and 771 ratings.
 
-## Gráfico interactivo del dashboard
+## Interactive Dashboard Chart
 
-La revisión identificó el siguiente recorrido:
+The review identified the following flow:
 
-
-Tabla dinámica en Analytics
+```text
+PivotTable in Analytics
           ↓
-Bloque de salida Analytics!CS12:CT22
+Output block Analytics!CS12:CT22
           ↓
-Gráfico Top 10 highest rated releases del dashboard
+Top 10 highest rated releases dashboard chart
+```
 
-
-| Componente | Configuración observada |
+| Component | Observed configuration |
 |---|---|
-| Campos de identificación visibles | [title] y [artist] |
-| Medida de votos | `Máx. de [num_ratings], en CP |
-| Medida de puntuación | Promedio de [average_rating_clean], en CQ |
-| Filtros de la tabla dinámica | [votes_threshold] y [style_primary] |
-| Bloque de salida | `Analytics!CS12:CT22` |
-| Etiquetas de salida | Columna CS, [Artist - Title] |
-| Puntuaciones de salida | Columna CT |
-| Referencia comprobada | La puntuación de CT13 procede de CQ13 |
+| Visible identification fields | [title] and [artist] |
+| Rating-count measure | Maximum of [num_ratings], in CP |
+| Score measure | Average of [average_rating_clean], in CQ |
+| PivotTable filters | [votes_threshold] and [style_primary] |
+| Output block | `Analytics!CS12:CT22` |
+| Output labels | Column CS, [Artist - Title] |
+| Output scores | Column CT |
+| Checked reference | CT13's score comes from CQ13 |
 
-Las capturas mostraron inicialmente ambos filtros en «(Todas)». En esa vista aparecían puntuaciones de 5,000 acompañadas de recuentos de votos bajos en la tabla dinámica. Por tanto, el gráfico no debe describirse como limitado permanentemente a 500 votos o más.
+The screenshots initially showed both filters set to “(All)”. In that view, 5.000 scores appeared alongside low rating counts in the PivotTable. The chart must therefore not be described as permanently restricted to releases with at least 500 ratings.
 
-El filtro [style_primary] corresponde al primer estilo de [styles_clean]; no equivale a buscar el estilo en cualquiera de las etiquetas de un lanzamiento.
+[style_primary] corresponds to the first style in [styles_clean]; it is not equivalent to searching for the style among all labels of a release.
 
-## Prueba del segmentador Votes threshold
+## Testing the Votes Threshold Slicer
 
-Se seleccionó únicamente `500+` en el segmentador del dashboard. Se confirmó que Choice pasó a ocupar el primer lugar del gráfico.
+I selected only `500+` in the dashboard slicer and confirmed that Choice moved to first place.
 
-La prueba acredita que el filtro llega al gráfico final a través de su tabla y bloque de apoyo. La confirmación comunicada fue la primera posición de Choice; no se registró una comprobación independiente de las diez posiciones, de la puntuación mostrada ni del desempate del gráfico.
+The test shows that the filter reaches the final chart through its table and supporting block. The confirmation concerned Choice's first position; there was no independent check of all ten positions, the displayed score, or the chart's tie-breaker.
 
-- El mínimo de 500 votos depende de seleccionar `500+`.
-- Los empates del gráfico se resuelvan por número de votos.
-- La tabla dinámica muestra una media de [average_rating_clean] y un máximo de [num_ratings]; estas agregaciones no deben confundirse con una media ponderada por votos.
-- La agrupación visible por artista y título no demuestra que todas las ediciones estén separadas mediante un identificador único en ese gráfico.
+- The 500-rating minimum depends on selecting `500+`.
+- Chart ties are resolved by rating count.
+- The PivotTable displays an average of [average_rating_clean] and a maximum of [num_ratings]; these aggregations must not be confused with a rating-count-weighted average.
+- Visible grouping by artist and title does not prove that all editions are separated by a unique identifier in this chart.
 
-### Texto de síntesis para la memoria
+### Summary Text for the Report
 
-Para la construcción del dashboard combiné tablas dinámicas, tablas auxiliares y fórmulas de Excel. Conecté el segmentador YEAR a los gráficos dinámicos de evolución anual, formatos y estilos seleccionados. Para trasladar la selección temporal al recuento por estilos, incorporé una tabla dinámica auxiliar que devuelve los años seleccionados y añadí la medida [Releases_selected_year] a la tabla de apoyo. Comprobé tanto la selección múltiple de años como el funcionamiento del cálculo. La actualización automática del orden del Top 10 de estilos tambien se verifico.
+To build the dashboard, I combined PivotTables, auxiliary tables, and Excel formulas. I connected YEAR to the annual release, format, and selected-style PivotCharts. To transfer temporal selections to style counts, I added an auxiliary PivotTable returning the selected years and added [Releases_selected_year] to the supporting table. I checked both multiple-year selection and the calculation's behavior. Automatic reordering of the top ten styles was also verified.
 
-Mantuve el gráfico dinámico de estilos para conservar su interactividad, en lugar de sustituirlo por una visualización estática con líneas suavizadas. Diferencié este gráfico del análisis auxiliar de porcentajes anuales por etiquetas de estilo.
+I retained the style PivotChart to preserve interactivity rather than replacing it with a static visualization with smoothed lines. I distinguished this chart from the auxiliary annual percentage analysis by style label.
 
-Para el gráfico de lanzamientos mejor valorados identifiqué una tabla dinámica en `Analytics` y el bloque `CS12:CT22` que alimenta sus etiquetas y puntuaciones. Comprobé que, al seleccionar `500+` en el segmentador `Votes threshold`, Choice aparece en primer lugar. Separé esta implementación interactiva del análisis auxiliar `Top_rated_releases`, que utiliza un mínimo fijo de quinientos votos y un criterio de desempate por cantidad de valoraciones.
+For the highest-rated releases chart, I identified a PivotTable in `Analytics` and the `CS12:CT22` block supplying its labels and scores. I confirmed that selecting `500+` in `Votes threshold` places Choice first. I separated this interactive implementation from `Top_rated_releases`, which uses a fixed minimum of five hundred ratings and a rating-count tie-breaker.
